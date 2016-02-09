@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'KlinicSlabBold';
+  src: url("/css/fonts/KlinicSlabBold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'KlinicSlabMedium';
+  src: url("/css/fonts/KlinicSlabMedium.otf") format("opentype");
+}
+
+@media (max-width: 768px) {
+  header > .container-fluid {
+    display: none;
+  }
+}
+
+header > .container-fluid {
+  width: 500px;
+}
+
+  header > .container-fluid a img {
+    width: 480px;
+    margin: 10px;
+  }
+
+.navbar {
+  background-color: #003087;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar .navbar-brand img {
+  max-height: 42px;
+  margin-top: -11px;
+}
+
+.navbar .navbar-brand.navbar-brand-title {
+  font-family: "KlinicSlabBold";
+  font-size: 24px;
+  color:#003087;
+  margin-left: -24px;
+  margin-top: 1px;
+}
+
+.navbar ul li:hover {
+  background-color: #122b4d;
+}
+
+#navbar {
+  font-family: "KlinicSlabMedium";
+  font-size: 24px;
+  color: #007396;
+  margin-top: 1px;
+}
+
+#navbar a {
+  color: #55D6F8;
+}
+
+/*
+#navbar-links a:hover {
+  color:#003087;
+}
+*/
+
+.bad-score {
+  color: #D70834;
+}
+
+thead .tname {
+  width: 60%;
+}
+thead .tpriority {
+  width: 20%;
+}
+
+thead .tscore {
+  width: 20%;
+}
+
+thead .cname {
+  width: 25%;
+}
+
+thead .cpriority {
+  width: 5%;
+}
+
+thead .ccorrection {
+  width: 70%;
+}
+
+.table-collapse {
+  display: inline;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table-collapse a{
+  color: #333;
+}
+
+.table-collapse a:hover {
+  color: #777;
+  text-decoration: none;
+}
+
+.failures {
+  display: inline;
+}
+
+.label-as-badge {
+  border-radius: 1em;
+}
+#dropbox {
+  color: #ccc;
+  border: 5px dotted #ccc;
+  margin-bottom: 20px;
+}
+
+#dropbox p {
+  margin: 20px;
+}
+
+#dropbox #dropbox-error {
+  display: none;
+}
+
+#dropbox.hovered {
+  border-color: #000;
+  color: #000;
+}
+
+#dropbox .progress {
+  display: none;
+  margin-bottom: 0px;
+}
+
+#dropbox.uploading {
+  border-color: white;
+}
+
+#dropbox.uploading .progress {
+  display: block;
+}
+
+#dropbox.uploading p {
+  display: none;
+}
+
+#url-input {
+  font-family: FontAwesome;
+}
+
+.submit-row {
+  padding-top: 15px;
+}
+
+#main-container .row .col-md-3.welcome {
+  margin-top: 22px;
+}
+
+@media (max-width: 992px) {
+  #main-container .row .col-md-3.welcome {
+    margin-top: 0;
+  }
+}
+
+#main-container .row .thumbnail .caption h3 {
+  margin-top: 5px;
+}
+
+#main-container .row .section-heading h1 {
+  margin-bottom: 25px;
+}
+
