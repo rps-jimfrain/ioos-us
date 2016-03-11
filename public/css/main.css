@@ -377,7 +377,7 @@ a.ioos-eds {
   }
 }
 
-a.metrics span.glyphicon-stats,
+a.metrics span.glyphicon-signal,
 a.comt span.glyphicon-th,
 a.data-discovery span.glyphicon-search {
   position    : absolute;
@@ -387,6 +387,6 @@ a.data-discovery span.glyphicon-search {
   margin-top  : 14%;
 }
 
-a.metrics span.glyphicon-stats {
+a.metrics span.glyphicon-signal {
   margin-left: -39%;
 }
