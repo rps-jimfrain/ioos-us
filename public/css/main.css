@@ -26,6 +26,7 @@ header > .container-fluid {
   background-color: #003087;
   border: none;
   border-radius: 0;
+  margin-bottom: 0;
 }
 
 .navbar img[src="images/logo-navbar.png"]  {
@@ -52,6 +53,22 @@ header > .container-fluid {
 
 header .dropdown-menu > li > a:hover {
   background-color: #021A47;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: fixed !important;
+    top     : 0 !important;
+  }
+  #grid-container {
+    margin-top: 75px !important;
+  }
+}
+
+header {
+  width   : 100%;
+  z-index : 1;
+  background-color: #fff;
 }
 
 .navbar-default .navbar-nav .dropdown-menu {
@@ -198,7 +215,17 @@ thead .ccorrection {
 }
 
 #grid-container .col-md-12 {
-  padding: 0 0 60px 0;
+  padding: 0 0 40px 0;
+}
+
+@media (max-width: 768px) {
+  #grid-container .col-md-12 > .grid {
+    margin: 0px 25px;
+  }
+}
+
+#grid-container {
+  margin-top: 40px;
 }
 
 .grid-item {
