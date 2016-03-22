@@ -20,4 +20,5 @@ $(function() {
 		if ($('body').width() > 768 && $('hdeader').css('top') === undefined)
 			headerScroll();
 	}
+    $('[data-toggle="tooltip"]').tooltip();
 });
