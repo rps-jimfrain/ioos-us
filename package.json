@@ -20,7 +20,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "universal-analytics": "^0.3.10"
   },
   "devDependencies": {
     "grunt-cli": "^0.1.13"

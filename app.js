@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var assetmanager = require('assetmanager');
+var ua = require('universal-analytics');
 
 var routes = require('./routes/index');
 
@@ -62,6 +63,15 @@ app.use(function(err, req, res, next) {
     message: err.message,
     error: {}
   });
+});
+
+// google analytics
+app.use(ua.middleware('UA-78530076-1', {cookieName: '_ga'}));
+
+app.use(function (err, req, res, next) {
+  if (req.visitor) {
+    req.visitor.pageview("/").send();
+  }
 });
 
 
