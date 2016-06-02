@@ -403,6 +403,9 @@ a.ioos-eds {
   color                 : #51565D;
 }
 
+a.ioos-eds:hover {
+  color                 : #51565D;
+}
 @media (min-width: 768px) {
   a.glider-dac {
     background-size     : 172%;
