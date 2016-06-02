@@ -400,6 +400,7 @@ a.sensor-map {
 
 a.ioos-eds {
   background-image      : url("/images/ioos-eds.png");
+  color                 : #51565D;
 }
 
 @media (min-width: 768px) {
