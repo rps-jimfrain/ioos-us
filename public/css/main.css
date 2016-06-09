@@ -406,6 +406,23 @@ a.ioos-eds {
 a.ioos-eds:hover {
   color                 : #51565D;
 }
+
+a.demonstrations {
+  background-image    : url("/images/demonstrations-tile.jpg");
+}
+
+@media (max-width: 768px) {
+  a.demonstrations {
+    background-position-y: -148px;
+  }
+}
+
+@media (min-width: 768px) {
+  a.demonstrations {
+    background-position: -228px -77px;
+  }
+}
+
 @media (min-width: 768px) {
   a.glider-dac {
     background-size     : 172%;
