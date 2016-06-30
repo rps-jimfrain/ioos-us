@@ -333,8 +333,13 @@ thead .ccorrection {
 }
 
 a.grid-item:hover {
-  color           : #fff;
+  color           : #DDEAFF;
   text-decoration : none;
+}
+
+a.grid-item:active,
+a.grid-item:visited {
+  text-decoration: none;
 }
 
 a.grid-item .tile-wrap {
