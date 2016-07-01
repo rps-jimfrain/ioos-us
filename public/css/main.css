@@ -322,6 +322,14 @@ thead .ccorrection {
   .grid-item.sensor-map .tile-wrap h1 {
     font-size:  26px;
   }
+
+  .sensor-map {
+    background-position-x: -80px;
+  }
+
+  a.grid-item.sensor-map .tile-wrap h1 {
+    margin-top: 36% !important;
+  }
 }
 
 .orange {
@@ -368,7 +376,7 @@ a.grid-item.mbon .tile-wrap h1 {
   }
 
   a.grid-item.sensor-map .tile-wrap h1 {
-    margin-top: 36%;
+    margin-top: 27%;
   }
 
   a.grid-item.mbon .tile-wrap h1 ,
@@ -402,9 +410,7 @@ a.glider-dac {
 }
 
 a.sensor-map {
-  background-image      : url("/images/all-stations.jpg");
-  background-position   : -270px -85px;
-  background-size       : 174%;
+  background-image      : url("/images/all-stations.png");
 }
 
 a.ioos-eds {
@@ -436,10 +442,6 @@ a.mbon {
   a.glider-dac {
     background-size     : 172%;
     background-position : -55px -20px;
-  }
-
-  a.sensor-map {
-    background-size: 210%;
   }
 }
 
