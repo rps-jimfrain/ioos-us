@@ -635,3 +635,12 @@ footer > .container > .row > .col-md-3 a:hover {
 }
 
 /*  END regions map */
+
+.col-centered {
+  float : none;
+  margin: 0 auto;
+}
+
+#main-container.container > .row > .col-md-3.col-centered {
+  width: 20%;
+}
