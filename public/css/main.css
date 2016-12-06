@@ -207,6 +207,54 @@ thead .ccorrection {
   margin-top: 50px;
 }
 
+#grid-container > .container-fluid {
+  margin-bottom: 20px;
+}
+
+button#search-data-button.btn.btn-default {
+  margin-bottom: 10px;
+  box-shadow: 1px 2px 4px #B0B0B0;
+}
+
+button#search-data-button.btn.btn-default:focus {
+  outline: none;
+}
+
+button#search-data-button.btn.btn-default span {
+  font-family: 'Roboto Slab', Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 22px;
+  padding-right: 8px;
+}
+
+button#search-data-button.btn.btn-default span::before
+{
+    color: #003087;
+    content: '\003e';
+    font-size: 1.8em;
+    font-weight: 400;
+    position: absolute;
+    left: 28px;
+    top: -7px;
+    transform: scale(0.8, 1.2);
+    transition: all 0.25s ease-out;
+}
+
+button#search-data-button.btn.btn-default.open span::before
+{
+    top: -3px;
+    transform: rotate(90deg) scale(0.8, 1.2);
+}
+
+#search-input-collapse input {
+  font-family: 'Roboto Slab', Times, serif;
+}
+
+#grid-container > .container-fluid .well {
+  margin-bottom: 0;
+}
+
 @media (min-width: 1280px) {
   #grid-container {
     padding-left  : 0;
@@ -225,7 +273,7 @@ thead .ccorrection {
 }
 
 #grid-container {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .grid-item {

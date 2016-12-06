@@ -12,7 +12,7 @@ $(function() {
         	$('header > div > a').css('visibility', 'visible');
             $('header').css({'position':'static','top':'0'});
             if ($('body').width() > 768)
-            	$('#grid-container').css('margin-top', '40px');
+				$('#grid-container').css('margin-top', '25px');
         }
     }
 	$(document).scroll(headerScroll);
@@ -21,4 +21,17 @@ $(function() {
 			headerScroll();
 	}
     $('[data-toggle="tooltip"]').tooltip();
+	$('.collapse')
+		.collapse('hide')
+		.on('show.bs.collapse', () => {
+			$('#search-data-button').addClass('open');
+			setTimeout(() => {$('#search-input-collapse input').focus()}, 50);
+		})
+		.on('hide.bs.collapse', () => {
+			$('#search-data-button').removeClass('open');
+			setTimeout(() => {$('#search-data-button').blur()}, 50);
+		});
+	$('#search-input-collapse button').on('click', (e) => {
+		alert('search click');
+	});
 });
