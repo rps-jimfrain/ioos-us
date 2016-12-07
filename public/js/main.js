@@ -1,4 +1,6 @@
 $(function() {
+	const CATALOG_URL = "https://dev-catalog.ioos.us/dataset?q=";
+
     headerScroll = function () {
     	var scroll = $(this).scrollTop();
         if (scroll > 50) {
@@ -31,7 +33,14 @@ $(function() {
 			$('#search-data-button').removeClass('open');
 			setTimeout(() => {$('#search-data-button').blur()}, 50);
 		});
-	$('#search-input-collapse button').on('click', (e) => {
-		alert('search click');
+	function searchCatalog () {
+		let query = $('input').val().trim();
+		if (query !== "")
+			window.open(CATALOG_URL + query, "_blank");
+	}
+	$('#search-input-collapse input').on('keyup', (e) => {
+		if (e.which === 13)
+			searchCatalog();
 	});
+	$('#search-input-collapse button').on('click', searchCatalog);
 });
