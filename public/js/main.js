@@ -1,5 +1,5 @@
 $(function() {
-	const CATALOG_URL = "https://dev-catalog.ioos.us/dataset?q=";
+	const CATALOG_URL = "https://data.ioos.us/dataset?q=";
 
     headerScroll = function () {
     	var scroll = $(this).scrollTop();
