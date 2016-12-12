@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     uglify: {
       main: {
         options: {
-          mangle: true,
+          mangle: false,
           compress: true
         },
         files: (function() {
