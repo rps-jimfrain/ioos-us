@@ -16,7 +16,7 @@ COPY bin /opt/ioos-us/bin
 COPY public /opt/ioos-us/public
 COPY routes /opt/ioos-us/routes
 COPY views /opt/ioos-us/views
-COPY app.js assets.json bower.json gruntfile.js package.json /opt/ioos-us/
+COPY .bowerrc app.js assets.json bower.json gruntfile.js package.json /opt/ioos-us/
 
 WORKDIR /opt/ioos-us
 RUN chown -R node:node /opt/ioos-us && \
