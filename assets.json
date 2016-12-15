@@ -2,8 +2,6 @@
     "main": {
         "css": {
             "public/build/css/main.min.css": [
-                "public/lib/bootstrap/dist/css/bootstrap.css",
-                "public/lib/font-awesome/css/font-awesome.css",
                 "public/css/main.css"
             ]
         },
