@@ -31,6 +31,15 @@ var assets = assetmanager.process({
 
 app.locals.assets = assets;
 
+// google analytics
+app.use(ua.middleware('UA-78530076-1', {cookieName: '_ga'}));
+
+app.use(function (req, res, next) {
+  if (req.visitor) {
+    req.visitor.pageview(req.url).send();
+  }
+  next();
+});
 
 app.use('/', routes);
 
@@ -64,15 +73,5 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
-// google analytics
-app.use(ua.middleware('UA-78530076-1', {cookieName: '_ga'}));
-
-app.use(function (err, req, res, next) {
-  if (req.visitor) {
-    req.visitor.pageview("/").send();
-  }
-});
-
 
 module.exports = app;
