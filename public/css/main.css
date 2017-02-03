@@ -701,6 +701,10 @@ nav.affix {
   top: 100px;
 }
 
+.sidebar {
+  margin-top: 45px;
+}
+
 .sidebar .nav > li > a {
     display: block;
     padding: 4px 20px;
@@ -755,6 +759,11 @@ nav.affix {
 .sidebar .nav .nav > .active > a {
     padding-left: 28px;
     font-weight: 500
+}
+
+@media (min-width: 992px) {
+  #sidenav.affix {
+    width: 212.5px;
 }
 
 /*  END side-nav  */
