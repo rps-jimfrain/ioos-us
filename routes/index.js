@@ -18,6 +18,11 @@ router.get('/contact-us', function(req, res, next) {
   res.render('contact-us', { title: 'The U.S. Integrated Ocean Observing System (IOOS) | Contact Us' });
 });
 
+/* GET comt about page. */
+router.get('/comt', function(req, res, next) {
+  res.render('comt', { title: 'The U.S. Integrated Ocean Observing System (IOOS) | Contact Us' });
+});
+
 /* GET comt projects page. */
 router.get('/comt-projects', function(req, res, next) {
   db.many('SELECT id, title, team as "Project Team", overview as "Project Overview and Results", ' +
