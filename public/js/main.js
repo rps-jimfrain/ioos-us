@@ -19,7 +19,7 @@ $(function() {
   };
   $(document).scroll(headerScroll);
   window.onresize = function (e) {
-    if ($('body').width() > 768 && $('hdeader').css('top') === undefined) {
+    if ($('body').width() > 768 && $('header').css('top') === undefined) {
       headerScroll();
     }
   };
