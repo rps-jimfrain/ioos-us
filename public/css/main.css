@@ -71,20 +71,6 @@ header {
   background-color: #fff;
 }
 
-@media (min-width: 768px) {
-  ul.sub-menu {
-    -webkit-column-count: 2;
-    -khtml-column-count : 2;
-    -moz-column-count   : 2;
-    column-count        : 2;
-    -webkit-column-gap  : 0;
-    -khtml-column-gap   : 0;
-    -moz-column-gap     : 0;
-    column-gap          : 0;
-    margin-left         : -250px;
-  }
-}
-
 .navbar-default .navbar-nav .dropdown-menu {
   border: none;
 }
@@ -282,12 +268,25 @@ button#search-data-button.btn.btn-default.open span::before
 
   .grid-item.onexone,
   .grid-item.twoxone,
-  .grid-item.twoxtwo {
+  .grid-item.twoxtwo,
+  .grid-item.onextwo {
     width : 100%;
     height: 240px;
   }
 
 @media (min-width: 768px) {
+  ul.sub-menu {
+    -webkit-column-count: 2;
+    -khtml-column-count : 2;
+    -moz-column-count   : 2;
+    column-count        : 2;
+    -webkit-column-gap  : 0;
+    -khtml-column-gap   : 0;
+    -moz-column-gap     : 0;
+    column-gap          : 0;
+    margin-left         : -250px;
+  }
+
   #navbar {
     height: 60px !important;
   }
@@ -326,7 +325,8 @@ button#search-data-button.btn.btn-default.open span::before
     margin-top: -6px;
   }
 
-  .grid-item.onexone {
+  .grid-item.onexone,
+  .grid-item.twoxone.data-demo-center {
       width : 33%;
       height: 240px;
   }
@@ -334,6 +334,11 @@ button#search-data-button.btn.btn-default.open span::before
   .grid-item.twoxone {
       width : 66%;
       height: 240px;
+  }
+
+  .grid-item.onextwo {
+    width: 33%;
+    height: 480px;
   }
 
   .grid-item.twoxtwo {
@@ -344,6 +349,51 @@ button#search-data-button.btn.btn-default.open span::before
   a.grid-item .tile-wrap h1 {
     font-size: 20px;
   }
+
+  a.grid-item.ioos-eds .tile-wrap h1,
+  a.grid-item.glider-dac .tile-wrap h1 {
+    margin-top: 13%;
+  }
+
+  a.grid-item .tile-wrap h1 {
+    margin-top: 33%;
+  }
+
+  a.grid-item.mbon .tile-wrap h1 {
+    margin-top: 75%;
+  }
+  a.grid-item.regional-associations .tile-wrap h1 {
+    margin-top: 33%;
+  }
+
+  a.grid-item.demonstrations .tile-wrap h1 {
+    margin-top: 26%;
+  }
+
+  a.grid-item.comt .tile-wrap h1,
+  a.grid-item.metrics .tile-wrap h1 {
+    margin-top: 32%;
+  }
+
+  .grid-item.ioos-eds .tile-wrap h1,
+  .grid-item.sensor-map .tile-wrap h1,
+  .grid-item.glider-dac .tile-wrap h1 {
+    font-size:  26px;
+  }
+
+  a.mbon {
+    background-position : -321px;
+    background-size     : cover;
+  }
+
+  a.glider-dac {
+    background-size     : 100%;
+    background-position : 0 -32px;
+  }
+
+  a.grid-item.twoxone.data-demo-center {
+    background-size: 125%;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -352,7 +402,13 @@ button#search-data-button.btn.btn-default.open span::before
       height: 240px;
   }
 
-  .grid-item.twoxone {
+  .grid-item.onextwo {
+    height: 480px;
+    width : 300px;
+  }
+
+  .grid-item.twoxone,
+  .grid-item.twoxone.data-demo-center {
       width : 600px;
       height: 240px;
   }
@@ -377,6 +433,11 @@ button#search-data-button.btn.btn-default.open span::before
 
   a.grid-item.sensor-map .tile-wrap h1 {
     margin-top: 36% !important;
+  }
+
+  a.grid-item.data-demo-center .tile-wrap h1 {
+    margin-top: 14%;
+    font-size:  26px;
   }
 }
 
@@ -405,46 +466,7 @@ a.grid-item .tile-wrap {
 }
 
 a.grid-item .tile-wrap h1 {
-  margin-top  : 10%;
   font-family : 'Roboto Slab', Times, serif;
-}
-
-a.grid-item.regional-associations .tile-wrap h1,
-a.grid-item.mbon .tile-wrap h1 {
-  margin-top: 8%;
-}
-
-@media (min-width: 768px) {
-  a.grid-item.ioos-eds .tile-wrap h1 {
-    margin-top: 14%;
-  }
-
-  a.grid-item .tile-wrap h1 {
-    margin-top: 33%;
-  }
-
-  a.grid-item.sensor-map .tile-wrap h1 {
-    margin-top: 27%;
-  }
-
-  a.grid-item.mbon .tile-wrap h1 ,
-  a.grid-item.regional-associations .tile-wrap h1 {
-    margin-top: 33%;
-  }
-
-  a.grid-item.demonstrations .tile-wrap h1 {
-    margin-top: 26%;
-  }
-
-  a.grid-item.comt .tile-wrap h1,
-  a.grid-item.metrics .tile-wrap h1 {
-    margin-top: 32%;
-  }
-
-  .grid-item.ioos-eds .tile-wrap h1,
-  .grid-item.sensor-map .tile-wrap h1 {
-    font-size:  26px;
-  }
 }
 
 a.grid-item {
@@ -474,23 +496,10 @@ a.mbon {
   background-image    : url("/images/demonstrations-tile.jpg");
 }
 
-@media (max-width: 768px) {
-  a.mbon {
-    background-position-y: -148px;
-  }
-}
-
-@media (min-width: 768px) {
-  a.mbon {
-    background-position: -228px -77px;
-  }
-}
-
-@media (min-width: 768px) {
-  a.glider-dac {
-    background-size     : 172%;
-    background-position : -55px -20px;
-  }
+a.data-demo-center {
+  background-image      : url("/images/data-demo-center.png");
+  background-size       : 100%;
+  background-position-y : -11px;
 }
 
 a.metrics span.glyphicon-signal,
