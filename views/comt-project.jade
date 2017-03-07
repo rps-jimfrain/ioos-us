@@ -1,0 +1,37 @@
+extends layout
+
+block body
+  body(data-spy="scroll", data-target="#sidenav")
+  - var nav = '<div class="sidebar col-md-3" role="complementary"><nav class="nav-list hidden-print hidden-xs hidden-sm affix-top" id="sidenav" data-spy="affix"><ul class="nav sidebar">'
+  - var content = '<div class="col-md-9" role="main">'
+  - var subCount = 0
+
+  each project in projects
+    if project.title.replace(/[ \/\.]*/g, '').toLowerCase() === projectTitle
+      - nav += '<li class="active"><a href="#' + project.id + '">' + project.title + '</a>'
+      - nav += '<ul class="nav">'
+      each val, index in project
+        if index === 'id'
+          - content += '<div class="anchor" id="' + val + '"></div>'
+        else if index === 'title'
+          - content += '<h1 class="page-header">' + val + '</h1>'
+        else 
+          if val != undefined
+            - var id = project.id + '-' + subCount
+            - nav += '<li><a href="#' + id + '">' + index + '</a></li>'
+            - content += '<div class="anchor" id="' + id + '"></div><h2>' + index + '</h2>'
+            - content += val
+          if index === 'Publications'
+            - nav += '</ul>'
+        - subCount++
+    else
+      - nav += '<li><a href="/comt/projects/' + project.title.replace(/[^\w]/g, '-').toLowerCase() + '">' + project.title + '</a></li>'
+    - nav += '</li>'
+    - subCount = 0
+  - nav += '</ul></nav></div>'
+  - content += '</div>'
+
+  div#main-container.container.comt-projects
+    div.row
+      | !{nav}
+      | !{content}

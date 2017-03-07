@@ -20,18 +20,28 @@ router.get('/contact-us', function(req, res, next) {
 
 /* GET comt about page. */
 router.get('/comt', function(req, res, next) {
-  res.render('comt', { title: 'The U.S. Integrated Ocean Observing System (IOOS) | Contact Us' });
+  db.many('SELECT title, overview FROM projects ORDER BY id ASC', [true])
+  .then(function (data) {
+    res.render('comt', {
+      title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects',
+      projects: data });
+  })
+  .catch(function (error) {
+    console.log('ERROR:', error);
+  });
 });
 
 /* GET comt projects page. */
-router.get('/comt-projects', function(req, res, next) {
+router.get('/comt/projects/:title', function(req, res, next) {
+  var projectTitle = req.params.title.replace(/-/g, '');
   db.many('SELECT id, title, team as "Project Team", overview as "Project Overview and Results", ' +
   'model_desc as "Model Descriptions", sub_project_desc as "Sub-Project Descriptions", ' +
   'pubs as "Publications" FROM projects ORDER BY id ASC', [true])
   .then(function (data) {
-    res.render('comt-projects', {
+    res.render('comt-project', {
       title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects',
-      projects: data });
+      projects: data,
+      projectTitle:  projectTitle});
   })
   .catch(function (error) {
     console.log('ERROR:', error);
