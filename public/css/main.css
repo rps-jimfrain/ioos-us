@@ -786,6 +786,22 @@ nav.nav-list {
   margin-bottom: 20px;
 }
 
+.project-snippet-fade {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 109px;
+    margin-bottom: 89px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
 /*  END comt  */
 
 /*  BEGIN comt/projects */

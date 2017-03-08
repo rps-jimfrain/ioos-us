@@ -20,7 +20,7 @@ router.get('/contact-us', function(req, res, next) {
 
 /* GET comt about page. */
 router.get('/comt', function(req, res, next) {
-  db.many('SELECT title, overview FROM projects ORDER BY id ASC', [true])
+  db.many('SELECT title, SUBSTRING (overview, 0, 280) as overview FROM projects ORDER BY id ASC', [true])
   .then(function (data) {
     res.render('comt', {
       title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects',
