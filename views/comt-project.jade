@@ -6,18 +6,18 @@ block body
   - var content = '<div class="col-md-9" role="main">'
   - var subCount = 0
 
-  each project in projects
+  each project in data[0]
     if project.title.replace(/[ \/\.]*/g, '').toLowerCase() === projectTitle
-      - nav += '<li class="active"><a href="#' + project.id + '">' + project.title + '</a>'
+      - nav += '<li class="active"><a href="#' + data[1].id + '">' + data[1].title + '</a>'
       - nav += '<ul class="nav">'
-      each val, index in project
+      each val, index in data[1]
         if index === 'id'
           - content += '<div class="anchor" id="' + val + '"></div>'
         else if index === 'title'
           - content += '<h1 class="page-header">' + val + '</h1>'
         else 
           if val != undefined
-            - var id = project.id + '-' + subCount
+            - var id = index.replace(/[ ]/g, '-').toLowerCase()
             - nav += '<li><a href="#' + id + '">' + index + '</a></li>'
             - content += '<div class="anchor" id="' + id + '"></div><h2>' + index + '</h2>'
             - content += val

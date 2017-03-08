@@ -34,14 +34,20 @@ router.get('/comt', function(req, res, next) {
 /* GET comt projects page. */
 router.get('/comt/projects/:title', function(req, res, next) {
   var projectTitle = req.params.title.replace(/-/g, '');
-  db.many('SELECT id, title, team as "Project Team", overview as "Project Overview and Results", ' +
-  'model_desc as "Model Descriptions", sub_project_desc as "Sub-Project Descriptions", ' +
-  'pubs as "Publications" FROM projects ORDER BY id ASC', [true])
+  db.task(function(t){
+    return t.batch([
+      t.many('SELECT title FROM projects ORDER BY id ASC', [true]),
+      t.one('SELECT id, title, team as "Project Team", overview as "Project Overview and Results", ' +
+              'model_desc as "Model Descriptions", sub_project_desc as "Sub-Project Descriptions", ' +
+              'pubs as "Publications" FROM projects WHERE regexp_replace(LOWER(title), \'[\.\/\\s+]\', \'\', \'g\') = \'' + projectTitle + '\'', [true])
+    ]);
+  })
   .then(function (data) {
     res.render('comt-project', {
-      title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects',
-      projects: data,
-      projectTitle:  projectTitle});
+      title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects | ' + data[1].title,
+      data: data,
+      projectTitle: projectTitle
+    });
   })
   .catch(function (error) {
     console.log('ERROR:', error);
