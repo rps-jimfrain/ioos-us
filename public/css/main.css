@@ -529,6 +529,32 @@ iframe.twitter-timeline {
   border: 1px solid #ddd !important;
 }
 
+#feedback{
+	border:0px solid #fff;
+	background:#660000 url('../images/feedback-tab-left.png') top left no-repeat;
+	width:36px;
+	height:100px;
+	position:fixed;
+	left:-3px;
+	top:40%;
+	overflow:hidden;
+	cursor:pointer;
+	z-index:2000;
+}
+
+#feedback:hover{
+	left:-2px;
+}
+
+#feedbackForm .modal-body .well:not(:first-of-type) {
+  width: 49%;
+  display: inline-block;
+}
+
+#feedbackForm .modal-body .well:last-of-type {
+  margin-left: 11px;
+}
+
 footer {
   font-family         : Roboto, sans-serif;
   background-color    : #020E38;

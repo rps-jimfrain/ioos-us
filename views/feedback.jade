@@ -1,0 +1,16 @@
+a(href='', id='feedback', class='hidden-xs')
+div(id='feedbackForm', class='modal fade', tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    div.modal-dialog
+        div.modal-content
+            div.modal-header
+                button(type='button', class='close', data-dismiss='modal', aria-hidden='true') &times;
+                h4.modal-title Submit site feedback
+            div.modal-body
+                div.well
+                    textarea(class='form-control', rows='6', placeholder='Comment or suggestion (required)')
+                div.well
+                    input(class='form-control', type='text', placeholder='Your name')
+                div.well
+                    input(class='form-control', type='email', placeholder='Your e-mail address')
+            div.modal-footer
+                input(type='submit', class='btn btn-primary', value='Submit')
