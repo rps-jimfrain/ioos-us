@@ -5,6 +5,13 @@ block body
   - var nav = '<div class="sidebar col-md-3" role="complementary"><nav class="nav-list hidden-print hidden-xs hidden-sm affix-top" id="sidenav" data-spy="affix"><ul class="nav sidebar">'
   - var content = '<div class="col-md-9" role="main">'
   - var subCount = 0
+  - var subProjects = '<ul>'
+  - var page = path
+
+  if (datasets.dataset !== undefined)
+    each dataset in datasets.dataset
+      - subProjects += '<li><a href="' + page + '/' + dataset.title.replace(/[^\w]/g, '-').toLowerCase() + '">' + dataset.title + '</a></li>'
+    - subProjects += '</ul>'
 
   each project in data[0]
     if project.title.replace(/[ \/\.]*/g, '').toLowerCase() === projectTitle
@@ -20,7 +27,10 @@ block body
             - var id = index.replace(/[ ]/g, '-').toLowerCase()
             - nav += '<li><a href="#' + id + '">' + index + '</a></li>'
             - content += '<div class="anchor" id="' + id + '"></div><h2>' + index + '</h2>'
-            - content += val
+            if index === 'Sub-Project Descriptions' && datasets.dataset !== undefined
+              - content += subProjects
+            else
+              - content += val
           if index === 'Publications'
             - nav += '</ul>'
         - subCount++

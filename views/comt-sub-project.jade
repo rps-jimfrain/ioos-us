@@ -1,0 +1,36 @@
+extends layout
+
+block body
+    div#main-container.container.comt-subprojects
+      div.row
+        h2.text-center= subProject.title
+        div.media
+          div.media-left
+            img(class='media-object thumbnail', src=subProject.thumbnail)
+          div.media-body
+            dl.dl-horizontal
+              dt= 'Metadata URL'
+              dd
+                a(href=path)= path
+              if subProject.temporal !== null
+                dt= 'Timeframe'
+                dd= subProject.temporal
+              dt= 'Spatial Extent'
+              dd= subProject.spatial
+              dt= 'TDS Link'
+              dd
+                a(href=subProject.distributions[0].downloadURL, target='_blank')= 'OPeNDAP HTML form'
+                br
+                a(href=subProject.distributions[1].downloadURL, target='_blank')= 'Data Download'
+                  &nbsp;
+                  span.glyphicon.glyphicon-download-alt
+              dt= 'Available Variables'
+              dd
+                ul
+                  each val, index in subProject.variablesMeasured
+                    li= val
+
+
+
+    script.
+      console.log(!{JSON.stringify(subProject)})
