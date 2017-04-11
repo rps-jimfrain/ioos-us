@@ -1,10 +1,7 @@
 {
     "dataset": [
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-81.14190,36.21685,-74.24416,39.61182", 
             "title": "CBOFS2 (2014-2015)", 
@@ -52,16 +49,13 @@
                 "mass_concentration_of_oxygen_in_sea_water"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "cb_hypoxia", 
+                "project": "cb_hypoxia", 
+                "sub-project": "2014-2015", 
                 "model": "ROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-77.13172,36.09487,-75.13589,39.94865", 
             "title": "ChesROMS_1do (extended 1984-2013)", 
@@ -110,15 +104,12 @@
             ], 
             "comt": {
                 "project": "cb_hypoxia", 
-                "sub-project": "cb_hypoxia", 
+                "sub-project": "1984-2013", 
                 "model": "ChesROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "2-year simulations of the Chesapeake Bay from eight hydrodynamic-oxygen models have been statistically compared to each other and to historical monitoring data. Results show that although models have difficulty resolving the variables typically thought to be the main drivers of dissolved oxygen variability (stratification, nutrients, and chlorophyll), all eight models have significant skill in reproducing the mean and seasonal variability of dissolved oxygen.", 
             "spatial": "-77.13172,36.09487,-75.13589,39.94865", 
             "title": "ChesROMS_1do", 
@@ -152,6 +143,13 @@
                     "title": "OceansMap Viewer", 
                     "description": "OceansMap Viewer", 
                     "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/catalog/cb_hypoxia/observations/catalog.html", 
+                    "mediaType": "application/html", 
+                    "title": "Observations Data", 
+                    "description": "Observation Data", 
+                    "format": "HTML"
                 }
             ], 
             "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/d38dae05-f61a-4f84-8cb2-c1a98ee8f89d", 
@@ -167,15 +165,12 @@
             ], 
             "comt": {
                 "project": "cb_hypoxia", 
-                "sub-project": "cb_hypoxia", 
+                "sub-project": "2004-2005", 
                 "model": "ChesROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "Chesapeake Bay with 1-term oxygen model - surfsat", 
             "spatial": "-77.13172,36.09487,-75.13589,39.94865", 
             "title": "ChesROMS_1tdo_surfsat", 
@@ -209,6 +204,13 @@
                     "title": "OceansMap Viewer", 
                     "description": "OceansMap Viewer", 
                     "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/catalog/cb_hypoxia/observations/catalog.html", 
+                    "mediaType": "application/html", 
+                    "title": "Observations Data", 
+                    "description": "Observation Data", 
+                    "format": "HTML"
                 }
             ], 
             "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/ff9035a4-aff6-41c9-99b4-d4d5bfb60334", 
@@ -224,15 +226,12 @@
             ], 
             "comt": {
                 "project": "cb_hypoxia", 
-                "sub-project": "cb_hypoxia", 
+                "sub-project": "2004-2005", 
                 "model": "ChesROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "ChesROMS-ECB Coupled Physical-Biogeochemical Model", 
             "spatial": "-77.13172,36.09487,-75.13589,39.94865", 
             "title": "ChesROMS-ECB", 
@@ -266,6 +265,13 @@
                     "title": "OceansMap Viewer", 
                     "description": "OceansMap Viewer", 
                     "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/catalog/cb_hypoxia/observations/catalog.html", 
+                    "mediaType": "application/html", 
+                    "title": "Observations Data", 
+                    "description": "Observation Data", 
+                    "format": "HTML"
                 }
             ], 
             "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/3dafb119-4467-425e-a51e-d1f7ff592611", 
@@ -281,15 +287,12 @@
             ], 
             "comt": {
                 "project": "cb_hypoxia", 
-                "sub-project": "cb_hypoxia", 
+                "sub-project": "2004-2005", 
                 "model": "ChesROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "COMT Estuarine Hypoxia CBOFS2 development Synoptic Hindcast", 
             "spatial": "-81.14190,36.21685,-74.24416,39.61182", 
             "title": "CBOFS2", 
@@ -336,15 +339,12 @@
             ], 
             "comt": {
                 "project": "cb_hypoxia", 
-                "sub-project": "cb_hypoxia", 
+                "sub-project": "2014-2015", 
                 "model": "ROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-77.46080,0.00000,0.00000,39.94560", 
             "title": "ROMS_RCA", 
@@ -378,6 +378,13 @@
                     "title": "OceansMap Viewer", 
                     "description": "OceansMap Viewer", 
                     "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/catalog/cb_hypoxia/observations/catalog.html", 
+                    "mediaType": "application/html", 
+                    "title": "Observations Data", 
+                    "description": "Observation Data", 
+                    "format": "HTML"
                 }
             ], 
             "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/e656dbea-0746-490e-9796-f0beb00f8a5e", 
@@ -388,16 +395,13 @@
                 "time"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "cb_hypoxia", 
+                "project": "cb_hypoxia", 
+                "sub-project": "2004-2005", 
                 "model": "ROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": null, 
             "title": "2005 UMASS FVCOM 3D no wave", 
@@ -446,16 +450,13 @@
                 "sea_water_temperature"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2005", 
+                "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": null, 
             "title": "2005 UMASS FVCOM 3D wave only", 
@@ -502,19 +503,16 @@
                 "latitude"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2005", 
+                "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "Scituate_Harbor_2005_Storm", 
             "spatial": "-70.75823,42.17242,-70.67453,42.23631", 
-            "title": "", 
+            "title": "2005 UND ADCIRC 2D wave", 
             "temporal": "2005-05-21T00:30:00/2005-06-01T00:00:00/PT30M", 
             "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
             "distributions": [
@@ -568,16 +566,13 @@
                 "sea_surface_wave_to_direction"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2005", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "Scituate_Harbor_2005_Storm", 
             "spatial": "-70.75823,42.17242,-70.67453,42.23631", 
             "title": "2005 UND 2D wave only", 
@@ -627,16 +622,13 @@
                 "significant_wave_height"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2005", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "Scituate_Harbor_2005_Storm", 
             "spatial": "-70.75823,42.17242,-70.67453,42.23631", 
             "title": "2005 UND ADCIRC 2D no waves", 
@@ -689,16 +681,266 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2005", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2005 VIMS SELFE 2D no wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2005_vims_selfe_2dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2005_vims_selfe_2dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2005_vims_selfe_2dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2005_vims_selfe_2dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
             ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/53a259df-836b-491b-b443-a1d7db7434fa", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2005", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2005 VIMS SELFE 2D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2005_vims_selfe_2dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2005_vims_selfe_2dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2005_vims_selfe_2dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2005_vims_selfe_2dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/08016afa-b1ef-4ab7-b2f5-54461c615e36", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2005", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2005 VIMS SELFE 2D wave only", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2005_vims_selfe_2dwaveonly.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2005_vims_selfe_2dwaveonly.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2005_vims_selfe_2dwaveonly.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2005_vims_selfe_2dwaveonly?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/f710c819-b41f-4d46-8b6c-49b26f0d6326", 
+            "variablesMeasured": [
+                "latitude", 
+                "longitude", 
+                "time"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2005", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2007 UMASS FVCOM 3D no wave", 
+            "temporal": "2007-04-01T00:00:00/2007-04-01T01:01:52.500000/PT1H1M52.5S,2007-04-01T01:58:07.500000/2007-04-01T04:01:52.500000/PT1H1M52.5S,2007-04-01T04:58:07.500000/2007-04-01T07:01:52.500000/PT1H1M52.5S,2007-04-01T07:58:07.500000/2007-04-01T10:01:52.500000/PT1H1M52.5S,2007-04-01T10:58:07.500000/2007-04-01T13:01:52.500000/PT1H1M52.5S,2007-04-01T13:58:07.500000/2007-04-01T16:01:52.500000/PT1H1M52.5S,2007-04-01T16:58:07.500000/2007-04-01T19:01:52.500000/PT1H1M52.5S,2007-04-01T19:58:07.500000/2007-04-01T22:01:52.500000/PT1H1M52.5S,2007-04-01T22:58:07.500000/2007-04-02T01:01:52.500000/PT1H1M52.5S,2007-04-02T01:58:07.500000/2007-04-02T04:01:52.500000/PT1H1M52.5S,2007-04-02T04:58:07.500000/2007-04-02T07:01:52.500000/PT1H1M52.5S,2007-04-02T07:58:07.500000/2007-04-02T10:01:52.500000/PT1H1M52.5S,2007-04-02T10:58:07.500000/2007-04-02T13:01:52.500000/PT1H1M52.5S,2007-04-02T13:58:07.500000/2007-04-02T16:01:52.500000/PT1H1M52.5S,2007-04-02T16:58:07.500000/2007-04-02T19:01:52.500000/PT1H1M52.5S,2007-04-02T19:58:07.500000/2007-04-02T22:01:52.500000/PT1H1M52.5S,2007-04-02T22:58:07.500000/2007-04-03T01:01:52.500000/PT1H1M52.5S,2007-04-03T01:58:07.500000/2007-04-03T04:01:52.500000/PT1H1M52.5S,2007-04-03T04:58:07.500000/2007-04-03T07:01:52.500000/PT1H1M52.5S,2007-04-03T07:58:07.500000/2007-04-03T10:01:52.500000/PT1H1M52.5S,2007-04-03T10:58:07.500000/2007-04-03T13:01:52.500000/PT1H1M52.5S,2007-04-03T13:58:07.500000/2007-04-03T16:01:52.500000/PT1H1M52.5S,2007-04-03T16:58:07.500000/2007-04-03T19:01:52.500000/PT1H1M52.5S,2007-04-03T19:58:07.500000/2007-04-03T22:01:52.500000/PT1H1M52.5S,2007-04-03T22:58:07.500000/2007-04-04T01:01:52.500000/PT1H1M52.5S,2007-04-04T01:58:07.500000/2007-04-04T04:01:52.500000/PT1H1M52.5S,2007-04-04T04:58:07.500000/2007-04-04T07:01:52.500000/PT1H1M52.5S,2007-04-04T07:58:07.500000/2007-04-04T10:01:52.500000/PT1H1M52.5S,2007-04-04T10:58:07.500000/2007-04-04T13:01:52.500000/PT1H1M52.5S,2007-04-04T13:58:07.500000/2007-04-04T16:01:52.500000/PT1H1M52.5S,2007-04-04T16:58:07.500000/2007-04-04T19:01:52.500000/PT1H1M52.5S,2007-04-04T19:58:07.500000/2007-04-04T22:01:52.500000/PT1H1M52.5S,2007-04-04T22:58:07.500000/2007-04-05T01:01:52.500000/PT1H1M52.5S,2007-04-05T01:58:07.500000/2007-04-05T04:01:52.500000/PT1H1M52.5S,2007-04-05T04:58:07.500000/2007-04-05T07:01:52.500000/PT1H1M52.5S,2007-04-05T07:58:07.500000/2007-04-05T10:01:52.500000/PT1H1M52.5S,2007-04-05T10:58:07.500000/2007-04-05T13:01:52.500000/PT1H1M52.5S,2007-04-05T13:58:07.500000/2007-04-05T16:01:52.500000/PT1H1M52.5S,2007-04-05T16:58:07.500000/2007-04-05T19:01:52.500000/PT1H1M52.5S,2007-04-05T19:58:07.500000/2007-04-05T22:01:52.500000/PT1H1M52.5S,2007-04-05T22:58:07.500000/2007-04-06T01:01:52.500000/PT1H1M52.5S,2007-04-06T01:58:07.500000/2007-04-06T04:01:52.500000/PT1H1M52.5S,2007-04-06T04:58:07.500000/2007-04-06T07:01:52.500000/PT1H1M52.5S,2007-04-06T07:58:07.500000/2007-04-06T10:01:52.500000/PT1H1M52.5S,2007-04-06T10:58:07.500000/2007-04-06T13:01:52.500000/PT1H1M52.5S,2007-04-06T13:58:07.500000/2007-04-06T16:01:52.500000/PT1H1M52.5S,2007-04-06T16:58:07.500000/2007-04-06T19:01:52.500000/PT1H1M52.5S,2007-04-06T19:58:07.500000/2007-04-06T22:01:52.500000/PT1H1M52.5S,2007-04-06T22:58:07.500000/2007-04-07T01:01:52.500000/PT1H1M52.5S,2007-04-07T01:58:07.500000/2007-04-07T04:01:52.500000/PT1H1M52.5S,2007-04-07T04:58:07.500000/2007-04-07T07:01:52.500000/PT1H1M52.5S,2007-04-07T07:58:07.500000/2007-04-07T10:01:52.500000/PT1H1M52.5S,2007-04-07T10:58:07.500000/2007-04-07T13:01:52.500000/PT1H1M52.5S,2007-04-07T13:58:07.500000/2007-04-07T16:01:52.500000/PT1H1M52.5S,2007-04-07T16:58:07.500000/2007-04-07T19:01:52.500000/PT1H1M52.5S,2007-04-07T19:58:07.500000/2007-04-07T22:01:52.500000/PT1H1M52.5S,2007-04-07T22:58:07.500000/2007-04-08T01:01:52.500000/PT1H1M52.5S,2007-04-08T01:58:07.500000/2007-04-08T04:01:52.500000/PT1H1M52.5S,2007-04-08T04:58:07.500000/2007-04-08T07:01:52.500000/PT1H1M52.5S,2007-04-08T07:58:07.500000/2007-04-08T10:01:52.500000/PT1H1M52.5S,2007-04-08T10:58:07.500000/2007-04-08T13:01:52.500000/PT1H1M52.5S,2007-04-08T13:58:07.500000/2007-04-08T16:01:52.500000/PT1H1M52.5S,2007-04-08T16:58:07.500000/2007-04-08T19:01:52.500000/PT1H1M52.5S,2007-04-08T19:58:07.500000/2007-04-08T22:01:52.500000/PT1H1M52.5S,2007-04-08T22:58:07.500000/2007-04-09T01:01:52.500000/PT1H1M52.5S,2007-04-09T01:58:07.500000/2007-04-09T04:01:52.500000/PT1H1M52.5S,2007-04-09T04:58:07.500000/2007-04-09T07:01:52.500000/PT1H1M52.5S,2007-04-09T07:58:07.500000/2007-04-09T10:01:52.500000/PT1H1M52.5S,2007-04-09T10:58:07.500000/2007-04-09T13:01:52.500000/PT1H1M52.5S,2007-04-09T13:58:07.500000/2007-04-09T16:01:52.500000/PT1H1M52.5S,2007-04-09T16:58:07.500000/2007-04-09T19:01:52.500000/PT1H1M52.5S,2007-04-09T19:58:07.500000/2007-04-09T22:01:52.500000/PT1H1M52.5S,2007-04-09T22:58:07.500000/2007-04-10T01:01:52.500000/PT1H1M52.5S,2007-04-10T01:58:07.500000/2007-04-10T04:01:52.500000/PT1H1M52.5S,2007-04-10T04:58:07.500000/2007-04-10T07:01:52.500000/PT1H1M52.5S,2007-04-10T07:58:07.500000/2007-04-10T10:01:52.500000/PT1H1M52.5S,2007-04-10T10:58:07.500000/2007-04-10T13:01:52.500000/PT1H1M52.5S,2007-04-10T13:58:07.500000/2007-04-10T16:01:52.500000/PT1H1M52.5S,2007-04-10T16:58:07.500000/2007-04-10T19:01:52.500000/PT1H1M52.5S,2007-04-10T19:58:07.500000/2007-04-10T22:01:52.500000/PT1H1M52.5S,2007-04-10T22:58:07.500000/2007-04-11T01:01:52.500000/PT1H1M52.5S,2007-04-11T01:58:07.500000/2007-04-11T04:01:52.500000/PT1H1M52.5S,2007-04-11T04:58:07.500000/2007-04-11T07:01:52.500000/PT1H1M52.5S,2007-04-11T07:58:07.500000/2007-04-11T10:01:52.500000/PT1H1M52.5S,2007-04-11T10:58:07.500000/2007-04-11T13:01:52.500000/PT1H1M52.5S,2007-04-11T13:58:07.500000/2007-04-11T16:01:52.500000/PT1H1M52.5S,2007-04-11T16:58:07.500000/2007-04-11T19:01:52.500000/PT1H1M52.5S,2007-04-11T19:58:07.500000/2007-04-11T22:01:52.500000/PT1H1M52.5S,2007-04-11T22:58:07.500000/2007-04-12T01:01:52.500000/PT1H1M52.5S,2007-04-12T01:58:07.500000/2007-04-12T04:01:52.500000/PT1H1M52.5S,2007-04-12T04:58:07.500000/2007-04-12T07:01:52.500000/PT1H1M52.5S,2007-04-12T07:58:07.500000/2007-04-12T10:01:52.500000/PT1H1M52.5S,2007-04-12T10:58:07.500000/2007-04-12T13:01:52.500000/PT1H1M52.5S,2007-04-12T13:58:07.500000/2007-04-12T16:01:52.500000/PT1H1M52.5S,2007-04-12T16:58:07.500000/2007-04-12T19:01:52.500000/PT1H1M52.5S,2007-04-12T19:58:07.500000/2007-04-12T22:01:52.500000/PT1H1M52.5S,2007-04-12T22:58:07.500000/2007-04-13T01:01:52.500000/PT1H1M52.5S,2007-04-13T01:58:07.500000/2007-04-13T04:01:52.500000/PT1H1M52.5S,2007-04-13T04:58:07.500000/2007-04-13T07:01:52.500000/PT1H1M52.5S,2007-04-13T07:58:07.500000/2007-04-13T10:01:52.500000/PT1H1M52.5S,2007-04-13T10:58:07.500000/2007-04-13T13:01:52.500000/PT1H1M52.5S,2007-04-13T13:58:07.500000/2007-04-13T16:01:52.500000/PT1H1M52.5S,2007-04-13T16:58:07.500000/2007-04-13T19:01:52.500000/PT1H1M52.5S,2007-04-13T19:58:07.500000/2007-04-13T22:01:52.500000/PT1H1M52.5S,2007-04-13T22:58:07.500000/2007-04-14T01:01:52.500000/PT1H1M52.5S,2007-04-14T01:58:07.500000/2007-04-14T04:01:52.500000/PT1H1M52.5S,2007-04-14T04:58:07.500000/2007-04-14T07:01:52.500000/PT1H1M52.5S,2007-04-14T07:58:07.500000/2007-04-14T10:01:52.500000/PT1H1M52.5S,2007-04-14T10:58:07.500000/2007-04-14T13:01:52.500000/PT1H1M52.5S,2007-04-14T13:58:07.500000/2007-04-14T16:01:52.500000/PT1H1M52.5S,2007-04-14T16:58:07.500000/2007-04-14T19:01:52.500000/PT1H1M52.5S,2007-04-14T19:58:07.500000/2007-04-14T22:01:52.500000/PT1H1M52.5S,2007-04-14T22:58:07.500000/2007-04-15T01:01:52.500000/PT1H1M52.5S,2007-04-15T01:58:07.500000/2007-04-15T04:01:52.500000/PT1H1M52.5S,2007-04-15T04:58:07.500000/2007-04-15T07:01:52.500000/PT1H1M52.5S,2007-04-15T07:58:07.500000/2007-04-15T10:01:52.500000/PT1H1M52.5S,2007-04-15T10:58:07.500000/2007-04-15T13:01:52.500000/PT1H1M52.5S,2007-04-15T13:58:07.500000/2007-04-15T16:01:52.500000/PT1H1M52.5S,2007-04-15T16:58:07.500000/2007-04-15T19:01:52.500000/PT1H1M52.5S,2007-04-15T19:58:07.500000/2007-04-15T22:01:52.500000/PT1H1M52.5S,2007-04-15T22:58:07.500000/2007-04-16T01:01:52.500000/PT1H1M52.5S,2007-04-16T01:58:07.500000/2007-04-16T04:01:52.500000/PT1H1M52.5S,2007-04-16T04:58:07.500000/2007-04-16T07:01:52.500000/PT1H1M52.5S,2007-04-16T07:58:07.500000/2007-04-16T10:01:52.500000/PT1H1M52.5S,2007-04-16T10:58:07.500000/2007-04-16T13:01:52.500000/PT1H1M52.5S,2007-04-16T13:58:07.500000/2007-04-16T16:01:52.500000/PT1H1M52.5S,2007-04-16T16:58:07.500000/2007-04-16T19:01:52.500000/PT1H1M52.5S,2007-04-16T19:58:07.500000/2007-04-16T22:01:52.500000/PT1H1M52.5S,2007-04-16T22:58:07.500000/2007-04-17T01:01:52.500000/PT1H1M52.5S,2007-04-17T01:58:07.500000/2007-04-17T04:01:52.500000/PT1H1M52.5S,2007-04-17T04:58:07.500000/2007-04-17T07:01:52.500000/PT1H1M52.5S,2007-04-17T07:58:07.500000/2007-04-17T10:01:52.500000/PT1H1M52.5S,2007-04-17T10:58:07.500000/2007-04-17T13:01:52.500000/PT1H1M52.5S,2007-04-17T13:58:07.500000/2007-04-17T16:01:52.500000/PT1H1M52.5S,2007-04-17T16:58:07.500000/2007-04-17T19:01:52.500000/PT1H1M52.5S,2007-04-17T19:58:07.500000/2007-04-17T22:01:52.500000/PT1H1M52.5S,2007-04-17T22:58:07.500000/2007-04-18T01:01:52.500000/PT1H1M52.5S,2007-04-18T01:58:07.500000/2007-04-18T04:01:52.500000/PT1H1M52.5S,2007-04-18T04:58:07.500000/2007-04-18T07:01:52.500000/PT1H1M52.5S,2007-04-18T07:58:07.500000/2007-04-18T10:01:52.500000/PT1H1M52.5S,2007-04-18T10:58:07.500000/2007-04-18T13:01:52.500000/PT1H1M52.5S,2007-04-18T13:58:07.500000/2007-04-18T16:01:52.500000/PT1H1M52.5S,2007-04-18T16:58:07.500000/2007-04-18T19:01:52.500000/PT1H1M52.5S,2007-04-18T19:58:07.500000/2007-04-18T22:01:52.500000/PT1H1M52.5S,2007-04-18T22:58:07.500000/2007-04-19T01:01:52.500000/PT1H1M52.5S,2007-04-19T01:58:07.500000/2007-04-19T04:01:52.500000/PT1H1M52.5S,2007-04-19T04:58:07.500000/2007-04-19T07:01:52.500000/PT1H1M52.5S,2007-04-19T07:58:07.500000/2007-04-19T10:01:52.500000/PT1H1M52.5S,2007-04-19T10:58:07.500000/2007-04-19T13:01:52.500000/PT1H1M52.5S,2007-04-19T13:58:07.500000/2007-04-19T16:01:52.500000/PT1H1M52.5S,2007-04-19T16:58:07.500000/2007-04-19T19:01:52.500000/PT1H1M52.5S,2007-04-19T19:58:07.500000/2007-04-19T22:01:52.500000/PT1H1M52.5S,2007-04-19T22:58:07.500000/2007-04-20T01:01:52.500000/PT1H1M52.5S,2007-04-20T01:58:07.500000/2007-04-20T04:01:52.500000/PT1H1M52.5S,2007-04-20T04:58:07.500000/2007-04-20T07:01:52.500000/PT1H1M52.5S,2007-04-20T07:58:07.500000/2007-04-20T10:01:52.500000/PT1H1M52.5S,2007-04-20T10:58:07.500000/2007-04-20T13:01:52.500000/PT1H1M52.5S,2007-04-20T13:58:07.500000/2007-04-20T16:01:52.500000/PT1H1M52.5S,2007-04-20T16:58:07.500000/2007-04-20T19:01:52.500000/PT1H1M52.5S,2007-04-20T19:58:07.500000/2007-04-20T22:01:52.500000/PT1H1M52.5S,2007-04-20T22:58:07.500000/2007-04-21T01:01:52.500000/PT1H1M52.5S,2007-04-21T01:58:07.500000/2007-04-21T04:01:52.500000/PT1H1M52.5S,2007-04-21T04:58:07.500000/2007-04-21T07:01:52.500000/PT1H1M52.5S,2007-04-21T07:58:07.500000/2007-04-21T10:01:52.500000/PT1H1M52.5S,2007-04-21T10:58:07.500000/2007-04-21T13:01:52.500000/PT1H1M52.5S,2007-04-21T13:58:07.500000/2007-04-21T16:01:52.500000/PT1H1M52.5S,2007-04-21T16:58:07.500000/2007-04-21T19:01:52.500000/PT1H1M52.5S,2007-04-21T19:58:07.500000/2007-04-21T22:01:52.500000/PT1H1M52.5S,2007-04-21T22:58:07.500000/2007-04-22T01:01:52.500000/PT1H1M52.5S,2007-04-22T01:58:07.500000/2007-04-22T04:01:52.500000/PT1H1M52.5S,2007-04-22T04:58:07.500000/2007-04-22T07:01:52.500000/PT1H1M52.5S,2007-04-22T07:58:07.500000/2007-04-22T10:01:52.500000/PT1H1M52.5S,2007-04-22T10:58:07.500000/2007-04-22T13:01:52.500000/PT1H1M52.5S,2007-04-22T13:58:07.500000/2007-04-22T16:01:52.500000/PT1H1M52.5S,2007-04-22T16:58:07.500000/2007-04-22T19:01:52.500000/PT1H1M52.5S,2007-04-22T19:58:07.500000/2007-04-22T22:01:52.500000/PT1H1M52.5S,2007-04-22T22:58:07.500000/2007-04-23T01:01:52.500000/PT1H1M52.5S,2007-04-23T01:58:07.500000/2007-04-23T04:01:52.500000/PT1H1M52.5S,2007-04-23T04:58:07.500000/2007-04-23T07:01:52.500000/PT1H1M52.5S,2007-04-23T07:58:07.500000/2007-04-23T10:01:52.500000/PT1H1M52.5S,2007-04-23T10:58:07.500000/2007-04-23T13:01:52.500000/PT1H1M52.5S,2007-04-23T13:58:07.500000/2007-04-23T16:01:52.500000/PT1H1M52.5S,2007-04-23T16:58:07.500000/2007-04-23T19:01:52.500000/PT1H1M52.5S,2007-04-23T19:58:07.500000/2007-04-23T22:01:52.500000/PT1H1M52.5S,2007-04-23T22:58:07.500000/2007-04-24T01:01:52.500000/PT1H1M52.5S,2007-04-24T01:58:07.500000/2007-04-24T04:01:52.500000/PT1H1M52.5S,2007-04-24T04:58:07.500000/2007-04-24T07:01:52.500000/PT1H1M52.5S,2007-04-24T07:58:07.500000/2007-04-24T10:01:52.500000/PT1H1M52.5S,2007-04-24T10:58:07.500000/2007-04-24T13:01:52.500000/PT1H1M52.5S,2007-04-24T13:58:07.500000/2007-04-24T16:01:52.500000/PT1H1M52.5S,2007-04-24T16:58:07.500000/2007-04-24T19:01:52.500000/PT1H1M52.5S,2007-04-24T19:58:07.500000/2007-04-24T22:01:52.500000/PT1H1M52.5S,2007-04-24T22:58:07.500000/2007-04-25T01:01:52.500000/PT1H1M52.5S,2007-04-25T01:58:07.500000/2007-04-25T04:01:52.500000/PT1H1M52.5S,2007-04-25T04:58:07.500000/2007-04-25T07:01:52.500000/PT1H1M52.5S,2007-04-25T07:58:07.500000/2007-04-25T10:01:52.500000/PT1H1M52.5S,2007-04-25T10:58:07.500000/2007-04-25T13:01:52.500000/PT1H1M52.5S,2007-04-25T13:58:07.500000/2007-04-25T16:01:52.500000/PT1H1M52.5S,2007-04-25T16:58:07.500000/2007-04-25T19:01:52.500000/PT1H1M52.5S,2007-04-25T19:58:07.500000/2007-04-25T22:01:52.500000/PT1H1M52.5S,2007-04-25T22:58:07.500000/2007-04-26T01:01:52.500000/PT1H1M52.5S,2007-04-26T01:58:07.500000/2007-04-26T04:01:52.500000/PT1H1M52.5S,2007-04-26T04:58:07.500000/2007-04-26T07:01:52.500000/PT1H1M52.5S,2007-04-26T07:58:07.500000/2007-04-26T10:01:52.500000/PT1H1M52.5S,2007-04-26T10:58:07.500000/2007-04-26T13:01:52.500000/PT1H1M52.5S,2007-04-26T13:58:07.500000/2007-04-26T16:01:52.500000/PT1H1M52.5S,2007-04-26T16:58:07.500000/2007-04-26T19:01:52.500000/PT1H1M52.5S,2007-04-26T19:58:07.500000/2007-04-26T22:01:52.500000/PT1H1M52.5S,2007-04-26T22:58:07.500000/2007-04-27T01:01:52.500000/PT1H1M52.5S,2007-04-27T01:58:07.500000/2007-04-27T04:01:52.500000/PT1H1M52.5S,2007-04-27T04:58:07.500000/2007-04-27T07:01:52.500000/PT1H1M52.5S,2007-04-27T07:58:07.500000/2007-04-27T10:01:52.500000/PT1H1M52.5S,2007-04-27T10:58:07.500000/2007-04-27T13:01:52.500000/PT1H1M52.5S,2007-04-27T13:58:07.500000/2007-04-27T16:01:52.500000/PT1H1M52.5S,2007-04-27T16:58:07.500000/2007-04-27T19:01:52.500000/PT1H1M52.5S,2007-04-27T19:58:07.500000/2007-04-27T22:01:52.500000/PT1H1M52.5S,2007-04-27T22:58:07.500000/2007-04-28T01:01:52.500000/PT1H1M52.5S,2007-04-28T01:58:07.500000/2007-04-28T04:01:52.500000/PT1H1M52.5S,2007-04-28T04:58:07.500000/2007-04-28T07:01:52.500000/PT1H1M52.5S,2007-04-28T07:58:07.500000/2007-04-28T10:01:52.500000/PT1H1M52.5S,2007-04-28T10:58:07.500000/2007-04-28T13:01:52.500000/PT1H1M52.5S,2007-04-28T13:58:07.500000/2007-04-28T16:01:52.500000/PT1H1M52.5S,2007-04-28T16:58:07.500000/2007-04-28T19:01:52.500000/PT1H1M52.5S,2007-04-28T19:58:07.500000/2007-04-28T22:01:52.500000/PT1H1M52.5S,2007-04-28T22:58:07.500000/2007-04-29T01:01:52.500000/PT1H1M52.5S,2007-04-29T01:58:07.500000/2007-04-29T04:01:52.500000/PT1H1M52.5S,2007-04-29T04:58:07.500000/2007-04-29T07:01:52.500000/PT1H1M52.5S,2007-04-29T07:58:07.500000/2007-04-29T10:01:52.500000/PT1H1M52.5S,2007-04-29T10:58:07.500000/2007-04-29T13:01:52.500000/PT1H1M52.5S,2007-04-29T13:58:07.500000/2007-04-29T16:01:52.500000/PT1H1M52.5S,2007-04-29T16:58:07.500000/2007-04-29T19:01:52.500000/PT1H1M52.5S,2007-04-29T19:58:07.500000/2007-04-29T22:01:52.500000/PT1H1M52.5S,2007-04-29T22:58:07.500000/2007-04-30T01:01:52.500000/PT1H1M52.5S,2007-04-30T01:58:07.500000/2007-04-30T04:01:52.500000/PT1H1M52.5S,2007-04-30T04:58:07.500000/2007-04-30T07:01:52.500000/PT1H1M52.5S,2007-04-30T07:58:07.500000/2007-04-30T10:01:52.500000/PT1H1M52.5S,2007-04-30T10:58:07.500000/2007-04-30T13:01:52.500000/PT1H1M52.5S,2007-04-30T13:58:07.500000/2007-04-30T16:01:52.500000/PT1H1M52.5S,2007-04-30T16:58:07.500000/2007-04-30T19:01:52.500000/PT1H1M52.5S,2007-04-30T19:58:07.500000/2007-04-30T22:01:52.500000/PT1H1M52.5S,2007-04-30T22:58:07.500000/2007-05-01T00:00:00/PT1H1M52.5S", 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2007_umass_fvcom_3dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2007_umass_fvcom_3dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2007_umass_fvcom_3dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2007_umass_fvcom_3dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/efce2596-23ab-4c6e-a60c-0fc1f5fb4ac9", 
+            "variablesMeasured": [
+                "ocean_sigma/general_coordinate", 
+                "longitude", 
+                "sea_floor_depth_below_geoid", 
+                "sea_surface_height_above_geoid", 
+                "sea_water_salinity", 
+                "Wind Velocity", 
+                "time", 
+                "latitude", 
+                "sea_water_temperature"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "FVCOM"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2007 UMASS FVCOM 3D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2007_umass_fvcom_3dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2007_umass_fvcom_3dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2007_umass_fvcom_3dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2007_umass_fvcom_3dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/2305369e-5111-4ad8-a7bf-f90644be5bc5", 
+            "variablesMeasured": [
+                "ocean_sigma/general_coordinate", 
+                "longitude", 
+                "sea_floor_depth_below_geoid", 
+                "sea_surface_height_above_geoid", 
+                "sea_water_salinity", 
+                "Wind Velocity", 
+                "time", 
+                "latitude", 
+                "sea_water_temperature"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "FVCOM"
+            }
+        }, 
+        {
+            "references": [], 
             "description": null, 
             "spatial": null, 
             "title": "2007 UMASS FVCOM 3D wave only", 
@@ -745,16 +987,13 @@
                 "latitude"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "Scituate_Harbor_2007_Storm", 
             "spatial": "-70.75823,42.17242,-70.67453,42.23631", 
             "title": "2007 UND ADCIRC 2D no wave", 
@@ -807,16 +1046,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "Scituate_Harbor_2007_Storm", 
             "spatial": "-70.75823,42.17242,-70.67453,42.23631", 
             "title": "2007 UND ADCIRC 2D wave", 
@@ -873,16 +1109,13 @@
                 "sea_surface_wave_to_direction"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "Scituate_Harbor_2007_Storm", 
             "spatial": "-70.75823,42.17242,-70.67453,42.23631", 
             "title": "2007 UND ADCIRC 2D waveonly", 
@@ -932,16 +1165,154 @@
                 "significant_wave_height"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2007 VIMS SELFE 2D no wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2007_vims_selfe_2dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2007_vims_selfe_2dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2007_vims_selfe_2dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2007_vims_selfe_2dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
             ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/99ff233f-db79-4120-a620-f8f749bc1a76", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2007 VIMS SELFE 2D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2007_vims_selfe_2dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2007_vims_selfe_2dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2007_vims_selfe_2dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2007_vims_selfe_2dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/96826fe9-28fe-4120-b3c7-d4cc703c502a", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2007 VIMS SELFE 2D wave only", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2007_vims_selfe_2dwaveonly.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2007_vims_selfe_2dwaveonly.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2007_vims_selfe_2dwaveonly.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2007_vims_selfe_2dwaveonly?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/99362fe1-9a6e-44e3-a36b-01b40ff055e1", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2007", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
             "description": "Scituate_Harbor_2010_Tides", 
             "spatial": null, 
             "title": "2010 UND ADCIRC tides", 
@@ -988,16 +1359,60 @@
                 "latitude"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "extratropical_inundation", 
+                "sub-project": "2010", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "2010 VIMS SELFE tides", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/extratropical_inundation.2010_vims_selfe_tide.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/extratropical_inundation.2010_vims_selfe_tide.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/extratropical_inundation.2010_vims_selfe_tide.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/extratropical_inundation2010_vims_selfe_tide?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
             ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/ef9bf2ad-269b-40ae-879f-27848ffeb586", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "extratropical_inundation", 
+                "sub-project": "2010", 
+                "model": "ADCIRC"
+            }
+        }, 
+        {
+            "references": [], 
             "description": null, 
             "spatial": "-98.20304,22.97701,-87.75712,30.84410", 
             "title": "ROMS simple O2 regular SOC (large)", 
@@ -1043,16 +1458,13 @@
                 "sea_water_temperature"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "gom_hypoxia", 
+                "sub-project": "forecast", 
+                "model": "ROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-94.52933,27.55418,-87.82013,30.30533", 
             "title": "ROMS simple O2 regular SOC (small)", 
@@ -1100,16 +1512,13 @@
                 "sea_water_temperature"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "gom_hypoxia", 
+                "project": "gom_hypoxia", 
+                "sub-project": "forecast", 
                 "model": "ROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-98.20304,22.97701,-87.75712,30.84410", 
             "title": "ROMS simple O2  SOC fixed temperature (large)", 
@@ -1155,16 +1564,13 @@
                 "sea_water_temperature"
             ], 
             "comt": {
-                "project": null, 
+                "project": "gom_hypoxia", 
                 "sub-project": "gom_hypoxia", 
-                "model": null
+                "model": "ROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-94.52933,27.55418,-87.82013,30.30533", 
             "title": "ROMS simple O2  SOC fixed temperature (small)", 
@@ -1213,15 +1619,12 @@
             ], 
             "comt": {
                 "project": "gom_hypoxia", 
-                "sub-project": "gom_hypoxia", 
+                "sub-project": "forecast", 
                 "model": "ROMS"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-94.35100,27.83900,-88.90200,30.04400", 
             "title": "GEM full bio", 
@@ -1266,15 +1669,12 @@
             ], 
             "comt": {
                 "project": "gom_hypoxia", 
-                "sub-project": null, 
-                "model": null
+                "sub-project": "scenario", 
+                "model": "GEM3D"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-94.35100,27.83900,-88.90200,30.04400", 
             "title": "GEM physics", 
@@ -1319,16 +1719,13 @@
                 "sea_water_temperature"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "gom_hypoxia", 
-                "model": "GEM"
+                "project": "gom_hypoxia", 
+                "sub-project": "forecast", 
+                "model": "NCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-94.35100,27.83900,-88.90200,30.04400", 
             "title": "GEM simpleo2 regular SOC", 
@@ -1373,15 +1770,12 @@
             ], 
             "comt": {
                 "project": "gom_hypoxia", 
-                "sub-project": "gom_hypoxia", 
-                "model": "GEM"
+                "sub-project": "forecast", 
+                "model": "NCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-94.35100,27.83900,-88.90200,30.04400", 
             "title": "GEM simpleo2 SOC fixed temperature", 
@@ -1426,15 +1820,12 @@
             ], 
             "comt": {
                 "project": "gom_hypoxia", 
-                "sub-project": "gom_hypoxia", 
-                "model": "GEM"
+                "sub-project": "forecast", 
+                "model": "NCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": null, 
             "title": "FVCOM simple O2 regular SOC", 
@@ -1484,16 +1875,13 @@
                 "dissolve oxygen"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "gom_hypoxia", 
+                "project": "gom_hypoxia", 
+                "sub-project": "forecast", 
                 "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": null, 
             "title": "FVCOM simple O2  SOC fixed temperature", 
@@ -1543,16 +1931,13 @@
                 "dissolve oxygen"
             ], 
             "comt": {
-                "project": null, 
+                "project": "gom_hypoxia", 
                 "sub-project": "gom_hypoxia", 
                 "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.90941,5.04220,-50.83378,45.83881", 
             "title": "ADCIRC 2D no waves", 
@@ -1599,16 +1984,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric waves reduction 078", 
@@ -1678,16 +2060,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric wave reduction 078 wave2", 
@@ -1757,16 +2136,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric waves reduction 090 it2", 
@@ -1836,16 +2212,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
+                "project": "pr_inundation", 
                 "sub-project": "pr_inundation", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric waves reduction 090 it3", 
@@ -1915,16 +2288,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
+                "project": "pr_inundation", 
                 "sub-project": "pr_inundation", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric waves full tide garret", 
@@ -1994,16 +2364,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it1", 
@@ -2051,16 +2418,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it2", 
@@ -2108,16 +2472,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it3", 
@@ -2165,16 +2526,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it4", 
@@ -2222,16 +2580,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it5", 
@@ -2279,16 +2634,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
-                "model": null
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it6", 
@@ -2336,16 +2688,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it7", 
@@ -2415,16 +2764,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it8", 
@@ -2494,16 +2840,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
-                "model": null
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
+                "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC reduced frequency range powell it9", 
@@ -2573,16 +2916,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "georges", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC 2D waves", 
@@ -2652,16 +2992,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "irene", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric no waves", 
@@ -2721,16 +3058,13 @@
                 "time_of_maximum_radiation_stress"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "irene", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric wave", 
@@ -2800,16 +3134,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "irene", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric wave reduction 078", 
@@ -2879,16 +3210,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "irene", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                  ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC parametric wave reduction 078 wave2", 
@@ -2958,16 +3286,13 @@
                 "time_of_minimum_air_pressure_at_sea_level"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "irene", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "PRVI TIDAL                            ! 30 CHARACTER ALPHANUMERIC RUN DESCRIPTI", 
             "spatial": "-97.99667,5.04220,-50.83376,45.83881", 
             "title": "ADCIRC 2D no waves", 
@@ -3027,16 +3352,13 @@
                 "time_of_maximum_radiation_stress"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "pr_inundation", 
+                "project": "pr_inundation", 
+                "sub-project": "sandy", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-99.39310,21.17910,-79.71020,31.22370", 
             "title": "SLOSH (MDL) egm3", 
@@ -3082,16 +3404,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": null, 
-                "model": null
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
+                "model": "SLOSH"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "TropUL_SURA_Ike_Tides_Winds       ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.85689,18.15139,-79.73931,31.01064", 
             "title": "ADCIRC 2D no waves", 
@@ -3148,16 +3467,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "tropical_inundation", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "TropUL_SURA_Ike_Tides_Winds       ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.85689,18.15139,-79.73931,31.01064", 
             "title": "ADCIRC 2D waves", 
@@ -3225,15 +3541,12 @@
             ], 
             "comt": {
                 "project": "tropical_inundation", 
-                "sub-project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "TropUL_SURA_Ike3D_Tides_Winds       ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.85689,18.15139,-79.73931,31.01064", 
             "title": "ADCIRC 3D no waves", 
@@ -3290,16 +3603,13 @@
                 "eastward_wind"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "tropical_inundation", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": "TropUL_SURA_Ike3D_Tides_Winds       ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
             "spatial": "-97.85689,18.15139,-79.73931,31.01064", 
             "title": "ADCIRC 3D waves", 
@@ -3367,15 +3677,12 @@
             ], 
             "comt": {
                 "project": "tropical_inundation", 
-                "sub-project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "ADCIRC"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-96.43930,28.10540,-92.87000,30.22740", 
             "title": "SLOSH (UND) egl3", 
@@ -3427,20 +3734,17 @@
                 "wind_stress_x"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "tropical_inundation", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "SLOSH"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
-            "spatial": "-99.41490,21.16100,-79.68710,31.23550", 
+            "spatial": null, 
             "title": "SLOSH (UND) egm3", 
-            "temporal": "2008-09-10T09:00:00/2008-09-14T11:00:00/PT10M", 
+            "temporal": null, 
             "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
             "distributions": [
                 {
@@ -3488,16 +3792,13 @@
                 "wind_stress_x"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "tropical_inundation", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "SLOSH"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-97.85689,18.15139,-79.73866,31.01064", 
             "title": "FVCOM 2D no waves", 
@@ -3544,16 +3845,13 @@
                 "latitude"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "tropical_inundation", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-97.85687,18.15139,-79.73865,31.01064", 
             "title": "FVCOM 2D waves", 
@@ -3600,16 +3898,13 @@
                 "latitude"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "tropical_inundation", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-97.85687,18.15139,-79.73865,31.01064", 
             "title": "FVCOM 3D no waves", 
@@ -3656,16 +3951,13 @@
                 "latitude"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "tropical_inundation", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-97.85687,18.15139,-79.73865,31.01064", 
             "title": "FVCOM 3D waves", 
@@ -3713,16 +4005,13 @@
             ], 
             "comt": {
                 "project": "tropical_inundation", 
-                "sub-project": null, 
-                "model": null
+                "sub-project": "ike", 
+                "model": "FVCOM"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
-            "description": "will this take precedence over the other?", 
+            "references": [], 
+            "description": "USF SWAN 2D surge", 
             "spatial": "-97.85687,18.15139,-79.73865,31.01064", 
             "title": "SWAN 2D surge", 
             "temporal": "2008-09-05T00:00:00/2008-09-15T00:00:00/P1D", 
@@ -3766,16 +4055,13 @@
                 "time"
             ], 
             "comt": {
-                "project": "Tropical Inundation", 
-                "sub-project": "Hurricane Ike (2008)", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "SWAN"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-97.85687,18.15139,-79.73865,31.01064", 
             "title": "SWAN no surge", 
@@ -3820,16 +4106,13 @@
                 "time"
             ], 
             "comt": {
-                "project": null, 
-                "sub-project": "tropical_inundation", 
+                "project": "tropical_inundation", 
+                "sub-project": "ike", 
                 "model": "SLOSH"
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": "-129.96180,40.67686,-122.14366,49.96952", 
             "title": "ROMS_Exp16", 
@@ -3882,10 +4165,7 @@
             }
         }, 
         {
-            "references": [
-                "http://link.to/input", 
-                "http://link.to/observed"
-            ], 
+            "references": [], 
             "description": null, 
             "spatial": null, 
             "title": "Regional Ocean Modeling System (ROMS): Oregon Coast", 
