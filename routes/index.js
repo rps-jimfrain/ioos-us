@@ -22,7 +22,7 @@ router.get('/contact-us', function(req, res, next) {
 router.get('/comt', function(req, res, next) {
   db.many('SELECT title, SUBSTRING (overview, 0, 280) as overview FROM projects ORDER BY id ASC', [true])
   .then(function (data) {
-    res.render('comt', {
+    res.render('comt/index', {
       title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects',
       projects: data });
   })
@@ -32,8 +32,8 @@ router.get('/comt', function(req, res, next) {
 });
 
 /* GET comt projects page. */
-router.get('/comt/projects/:title', function(req, res, next) {
-  var projectTitle = req.params.title.replace(/-/g, '');
+router.get('/comt/projects/:project', function(req, res, next) {
+  var projectTitle = req.params.project.replace(/-/g, '');
   var datasets = {};
   if (projectTitle === 'chesapeakebayhypoxia')
     datasets = require('../public/comt_datasets');
@@ -46,7 +46,7 @@ router.get('/comt/projects/:title', function(req, res, next) {
     ]);
   })
   .then(function (data) {
-    res.render('comt-project', {
+    res.render('comt/project', {
       title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects | ' + data[1].title,
       data: data,
       projectTitle: projectTitle,
@@ -59,24 +59,32 @@ router.get('/comt/projects/:title', function(req, res, next) {
   });
 });
 
-/* GET comt sub-projects page. */
-router.get('/comt/projects/:title/:subProject', function(req, res, next) {
-  var subProjectTitle = req.params.subProject;
-  var datasets = require('../public/comt_datasets');
-  var subProject = {};
+/* GET comt dataset page. */
+router.get('/comt/projects/:project/:dataset', function(req, res, next) {
+  var datasetTitle = req.params.dataset,
+      datasets = require('../public/comt_datasets'),
+      dataset = {},
+      projectTitle = req.params.project.replace(/-/g, '');
   datasets.dataset.every(function (e, i) {
-    if (e.title.replace(/[^\w]/g, '-').toLowerCase() === subProjectTitle) {
-      subProject = e;
+    if (e.title.replace(/[^\w]/g, '-').toLowerCase() === datasetTitle) {
+      dataset = e;
       return false;
     }
     else
       return true;
   });
-  res.render('comt-sub-project', {
-      title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects | ',
-      subProject: subProject,
-      path: 'https://ioos.us' + req.path
-    });
+  db.one('SELECT title FROM projects WHERE regexp_replace(LOWER(title), \'[\.\/\\s+]\', \'\', \'g\') = \'' + projectTitle + '\'', [true])
+    .then(function (project) {
+      res.render('comt/dataset', {
+        title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects | ' + project.title + ' | Datasets',
+        dataset: dataset,
+        project: project,
+        projectPath: req.params.project
+      });
+    })
+    .catch(function (error) {
+      console.log('ERROR:', error);
+  });
 });
 
 module.exports = router;

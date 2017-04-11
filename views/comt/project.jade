@@ -1,17 +1,20 @@
-extends layout
+extends ../layout
 
 block body
   body(data-spy="scroll", data-target="#sidenav")
   - var nav = '<div class="sidebar col-md-3" role="complementary"><nav class="nav-list hidden-print hidden-xs hidden-sm affix-top" id="sidenav" data-spy="affix"><ul class="nav sidebar">'
   - var content = '<div class="col-md-9" role="main">'
   - var subCount = 0
-  - var subProjects = '<ul>'
+  - var projectDatasets = []
+  //- - var subProjects = '<ul>'
   - var page = path
 
   if (datasets.dataset !== undefined)
     each dataset in datasets.dataset
-      - subProjects += '<li><a href="' + page + '/' + dataset.title.replace(/[^\w]/g, '-').toLowerCase() + '">' + dataset.title + '</a></li>'
-    - subProjects += '</ul>'
+      if (dataset.comt["sub-project"] === 'cb_hypoxia')
+        - projectDatasets.push(dataset)
+        //- - subProjects += '<li><a href="' + page + '/' + dataset.title.replace(/[^\w]/g, '-').toLowerCase() + '">' + dataset.title + '</a></li>'
+    //- - subProjects += '</ul>'
 
   each project in data[0]
     if project.title.replace(/[ \/\.]*/g, '').toLowerCase() === projectTitle
@@ -27,10 +30,10 @@ block body
             - var id = index.replace(/[ ]/g, '-').toLowerCase()
             - nav += '<li><a href="#' + id + '">' + index + '</a></li>'
             - content += '<div class="anchor" id="' + id + '"></div><h2>' + index + '</h2>'
-            if index === 'Sub-Project Descriptions' && datasets.dataset !== undefined
-              - content += subProjects
-            else
-              - content += val
+            //- if index === 'Sub-Project Descriptions' && datasets.dataset !== undefined
+            //-   - content += subProjects
+            //- else
+            - content += val
           if index === 'Publications'
             - nav += '</ul>'
         - subCount++
@@ -45,3 +48,17 @@ block body
     div.row
       | !{nav}
       | !{content}
+
+  script.
+    var ds = !{JSON.stringify(projectDatasets)};
+    var listItem = 'ul#cb_hypoxia-comt';
+    $(ds).each(function (i, v) {
+      if (v.title.match(/1984/i))
+        listItem = 'ul#cb_hypoxia-1984';
+      else if (v.title.match(/2014/i))
+        listItem = 'ul#cb_hypoxia-2014';
+      else if (v.title.match(/2004/i))
+        listItem = 'ul#cb_hypoxia-2004';
+      $(listItem).append('<li><a href="' + '!{page}' + '/' + v.title.replace(/[^\w]/g, '-').toLowerCase() + '">' + v.title + '</a></li>');
+    });
+    console.log(ds);
