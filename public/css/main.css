@@ -818,3 +818,18 @@ div.anchor {
 }
 
 /* END comt/projects */
+
+/*  BEGIN comt/projects/:title/:subProject */
+
+.comt-dataset img.thumbnail {
+  box-shadow: 5px 5px 5px #666;
+  -moz-box-shadow: 5px 5px 5px #666;
+  -webkit-box-shadow: 5px 5px 5px #666;
+}
+
+.comt-dataset dd > ul {
+  list-style  : none;
+  padding-left: 0;
+}
+
+/* END comt/projects/:title/:subProject */
