@@ -7,6 +7,7 @@ block body
          a(href='/comt')= 'Coastal and Ocean Modeling Testbed'
          | &nbsp;>&nbsp;
          a(href='/comt/projects/' + projectPath + '#sub-project-descriptions')= project.title
+         | &nbsp;>&nbsp; !{dataset.comt["sub-project"]}
       div.row
         h2.text-center= dataset.title
         p.text-center= dataset.description
