@@ -32,9 +32,10 @@ block body
               dt Available Variables
               dd
                 ul
-                  each val, index in dataset.variablesMeasured
-                    li
-                      span.badge= val
+                  each variable in dataset.variablesMeasured
+                    if typeof variable !== 'string'
+                      li
+                        span.badge(style='background-color:' + variable[1])= variable[0]
 
     script.
       console.log(!{JSON.stringify(dataset)})

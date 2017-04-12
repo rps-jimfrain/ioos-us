@@ -66,6 +66,7 @@ router.get('/comt/projects/:project', function(req, res, next) {
 router.get('/comt/projects/:project/:dataset', function(req, res, next) {
   var datasetTitle = req.params.dataset,
       datasets = require('../public/comt_datasets'),
+      variables = {},
       dataset = {},
       projectTitle = req.params.project.replace(/-/g, '');
   datasets.dataset.every(function (e, i) {
@@ -76,6 +77,20 @@ router.get('/comt/projects/:project/:dataset', function(req, res, next) {
     else
       return true;
   });
+  if (dataset.variablesColored === undefined) {
+    variables = require('../public/variables')
+    for (var i=0; i<dataset.variablesMeasured.length;i++) {
+      variables.variables.every(function (variableWithColor) {
+        if (variableWithColor[1] !== '#000000' && variableWithColor[0] === dataset.variablesMeasured[i]) {
+          dataset.variablesMeasured[i] = variableWithColor;
+          return false;
+        }
+        else
+          return true;
+      });
+    }
+    dataset.variablesColored = true;
+  }
   db.one('SELECT title FROM projects WHERE regexp_replace(LOWER(title), \'[\.\/\\s+]\', \'\', \'g\') = \'' + projectTitle + '\'', [true])
     .then(function (project) {
       res.render('comt/dataset', {

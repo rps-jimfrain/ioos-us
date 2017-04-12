@@ -819,7 +819,7 @@ div.anchor {
 
 /* END comt/projects */
 
-/*  BEGIN comt/projects/:title/:subProject */
+/*  BEGIN comt/projects/:project/:dataset */
 
 .comt-dataset img.thumbnail {
   box-shadow: 5px 5px 5px #666;
@@ -832,4 +832,8 @@ div.anchor {
   padding-left: 0;
 }
 
-/* END comt/projects/:title/:subProject */
+.comt-dataset span.badge {
+  font-size: 14px;
+}
+
+/* END comt/projects/:project/:dataset */
