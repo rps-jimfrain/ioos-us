@@ -40,6 +40,5 @@ block body
   script.
     var ds = !{JSON.stringify(datasets)};
     $(ds).each(function (i, v) {
-      $('ul[data-key="' + v.comt["sub-project"] + '"]').append('<li><a href="' + '!{page}' + '/' + v.title.replace(/[^\w]/g, '-').toLowerCase() + '">' + v.title + '</a></li>');
+      $('div[data-key="' + v.comt["sub-project"] + '"] ul').append('<li><a href="' + '!{page}' + '/' + v.title.replace(/[^\w]/g, '-').toLowerCase() + '?t=' + $('div[data-key="' + v.comt["sub-project"] + '"] h3').text() + '">' + v.title + '</a></li>');
     });
-    console.log(ds);

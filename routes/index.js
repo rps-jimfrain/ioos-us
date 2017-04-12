@@ -97,7 +97,8 @@ router.get('/comt/projects/:project/:dataset', function(req, res, next) {
         title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects | ' + project.title + ' | Datasets',
         dataset: dataset,
         project: project,
-        projectPath: req.params.project
+        projectPath: req.params.project,
+        subProjectTitle: req.query.t
       });
     })
     .catch(function (error) {

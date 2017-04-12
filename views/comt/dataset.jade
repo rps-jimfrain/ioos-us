@@ -7,7 +7,7 @@ block body
          a(href='/comt')= 'Coastal and Ocean Modeling Testbed'
          | &nbsp;>&nbsp;
          a(href='/comt/projects/' + projectPath + '#sub-project-descriptions')= project.title
-         | &nbsp;>&nbsp; !{dataset.comt["sub-project"]}
+         | &nbsp;>&nbsp; !{subProjectTitle}
       div.row
         h2.text-center= dataset.title
         p.text-center= dataset.description
@@ -36,6 +36,3 @@ block body
                     if typeof variable !== 'string'
                       li
                         span.badge(style='background-color:' + variable[1])= variable[0]
-
-    script.
-      console.log(!{JSON.stringify(dataset)})
