@@ -23,8 +23,9 @@ block body
                 - var min = new Date(dataset.temporal.substr(0, dataset.temporal.indexOf('/'))).toUTCString().substr(4, 12)
                 - var max = new Date(dataset.temporal.substr(dataset.temporal.lastIndexOf('/') - 19, 19)).toUTCString().substr(4, 12)
                 dd!= min + ' &ndash; ' + max
-              dt Spatial Extent
-              dd= dataset.spatial
+              if dataset.spatial !== null
+                dt Spatial Extent
+                dd= dataset.spatial
               dt Links
               dd
                 ul
