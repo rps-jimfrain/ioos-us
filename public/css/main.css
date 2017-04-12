@@ -819,6 +819,15 @@ div.anchor {
 
 /* END comt/projects */
 
+/*  BEGIN comt/projects/:project */
+
+.comt-projects div.list-group {
+  display     : inline-block;
+  margin-left : 30px;
+}
+
+/*  END comt/projects/:project */
+
 /*  BEGIN comt/projects/:project/:dataset */
 
 .comt-dataset img.thumbnail {
