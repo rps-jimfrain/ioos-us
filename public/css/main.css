@@ -834,8 +834,8 @@ div.anchor {
   box-shadow: 5px 5px 5px #666;
   -moz-box-shadow: 5px 5px 5px #666;
   -webkit-box-shadow: 5px 5px 5px #666;
-  min-width: 220px;
-  min-height: 168px;
+  min-width: 225px;
+  min-height: 225px;
 }
 
 .comt-dataset dd > ul {
