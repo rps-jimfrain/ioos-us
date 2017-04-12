@@ -3,11 +3,13 @@ extends ../layout
 block body
     div#main-container.container.comt-dataset
       div.row
-        p
-         a(href='/comt')= 'Coastal and Ocean Modeling Testbed'
-         | &nbsp;>&nbsp;
-         a(href='/comt/projects/' + projectPath + '#sub-project-descriptions')= project.title
-         | &nbsp;>&nbsp; !{subProjectTitle}
+        ol.breadcrumb
+          li
+            a(href='/comt')= 'Coastal and Ocean Modeling Testbed'
+          li
+            a(href='/comt/projects/' + projectPath + '#sub-project-descriptions')= project.title
+          li.active
+            !{subProjectTitle}
       div.row
         h2.text-center= dataset.title
         p.text-center= dataset.description
