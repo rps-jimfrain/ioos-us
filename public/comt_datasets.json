@@ -575,7 +575,7 @@
             "references": [], 
             "description": "Scituate_Harbor_2005_Storm", 
             "spatial": "-70.75823,42.17242,-70.67453,42.23631", 
-            "title": "2005 UND 2D wave only", 
+            "title": "2005 UND ADCIRC 2D wave only", 
             "temporal": "2005-05-21T00:30:00/2005-06-01T00:00:00/PT30M", 
             "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
             "distributions": [
@@ -4109,6 +4109,831 @@
                 "project": "tropical_inundation", 
                 "sub-project": "ike", 
                 "model": "SLOSH"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita MDL SLOSH egm3", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_mdl_slosh_egm3.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_mdl_slosh_egm3.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_mdl_slosh_egm3.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_mdl_slosh_egm3?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/2e3699b3-062f-4b68-995e-c77db7a384ba", 
+            "variablesMeasured": [
+                "northward_wind", 
+                "water_surface_height_above_reference_datum", 
+                "longitude", 
+                "time", 
+                "latitude", 
+                "eastward_wind"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": null
+            }
+        }, 
+        {
+            "references": [], 
+            "description": "TropUL_SURA_Rita_Tides_Winds      ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
+            "spatial": null, 
+            "title": "Rita UND ADCIRC 2D no wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_und_adcirc_2dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_und_adcirc_2dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_und_adcirc_2dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_und_adcirc_2dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/0c098eb0-f3bc-4bc4-a74b-b10314f951eb", 
+            "variablesMeasured": [
+                "mesh_topology", 
+                "depth below geoid", 
+                "face_node_connectivity", 
+                "sea_surface_height_above_geoid", 
+                "longitude", 
+                "time", 
+                "latitude"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "ADCIRC"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": "TropUL_SURA_Rita_Tides_Winds      ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
+            "spatial": null, 
+            "title": "Rita UND ADCIRC 2D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_und_adcirc_2dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_und_adcirc_2dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_und_adcirc_2dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_und_adcirc_2dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/cff54d2b-0df6-40e0-9a72-8b4cedcf0bf3", 
+            "variablesMeasured": [
+                "mesh_topology", 
+                "depth below geoid", 
+                "face_node_connectivity", 
+                "sea_surface_wave_period_at_variance_spectral_density_maximum", 
+                "longitude", 
+                "time", 
+                "latitude"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "ADCIRC"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": "TropUL_SURA_3DRita_Tides_Winds    ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
+            "spatial": null, 
+            "title": "Rita UND ADCIRC 3D no wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_und_adcirc_3dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_und_adcirc_3dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_und_adcirc_3dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_und_adcirc_3dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/10cb208d-b0fa-455a-9885-3e7445d5d1f5", 
+            "variablesMeasured": [
+                "mesh_topology", 
+                "depth below geoid", 
+                "face_node_connectivity", 
+                "sea_surface_height_above_geoid", 
+                "longitude", 
+                "time", 
+                "latitude"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "ADCIRC"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": "TropUL_SURA_3DRita_Tides_Winds    ! 32 CHARACTER ALPHANUMERIC RUN DESCRIPTION", 
+            "spatial": null, 
+            "title": "Rita UND ADCIRC 3D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_und_adcirc_3dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_und_adcirc_3dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_und_adcirc_3dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_und_adcirc_3dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/b6f54842-5c1b-4754-a73a-bdeaf56224d0", 
+            "variablesMeasured": [
+                "mesh_topology", 
+                "depth below geoid", 
+                "face_node_connectivity", 
+                "sea_surface_wave_period_at_variance_spectral_density_maximum", 
+                "longitude", 
+                "time", 
+                "latitude"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": null
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita UND SLOSH ebp3", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_und_slosh_ebp3.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_und_slosh_ebp3.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_und_slosh_ebp3.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_und_slosh_ebp3?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/f3f04909-b01b-4aee-bc42-22968227203a", 
+            "variablesMeasured": [
+                "maximum_sea_surface_height_above_geoid", 
+                "pressure_gradient_x", 
+                "pressure_gradient_y", 
+                "depth_below_geoid", 
+                "Longitude", 
+                "Latitude", 
+                "sea_surface_height_above_geoid", 
+                "time", 
+                "wind_speed_y", 
+                "wind_speed_x", 
+                "wind_stress_y", 
+                "wind_stress_x"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "SLOSH"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita UND SLOSH egm3", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_und_slosh_egm3.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_und_slosh_egm3.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_und_slosh_egm3.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_und_slosh_egm3?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/876bec7b-2378-4f59-ac53-29ab8c782b21", 
+            "variablesMeasured": [
+                "maximum_sea_surface_height_above_geoid", 
+                "pressure_gradient_x", 
+                "pressure_gradient_y", 
+                "depth_below_geoid", 
+                "longitude", 
+                "latitude", 
+                "sea_surface_height_above_geoid", 
+                "time", 
+                "wind_speed_y", 
+                "wind_speed_x", 
+                "wind_stress_y", 
+                "wind_stress_x"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "SLOSH"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita USF FVCOM 2D no wave", 
+            "temporal": "2005-09-18T00:00:00/2005-09-30T00:00:00/PT10M", 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_usf_fvcom_2dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_usf_fvcom_2dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_usf_fvcom_2dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_usf_fvcom_2dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/2b03189c-f73b-45ab-b9c3-56cca3d141ad", 
+            "variablesMeasured": [
+                "ocean_sigma/general_coordinate", 
+                "longitude", 
+                "sea_floor_depth_below_geoid", 
+                "sea_surface_height_above_geoid", 
+                "time", 
+                "latitude"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "FVCOM"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita USF FVCOM 2D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_usf_fvcom_2dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_usf_fvcom_2dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_usf_fvcom_2dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_usf_fvcom_2dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/bd715167-f87a-4aee-89c3-4efb9ff9c1f9", 
+            "variablesMeasured": [
+                "ocean_sigma/general_coordinate", 
+                "longitude", 
+                "sea_floor_depth_below_geoid", 
+                "sea_surface_height_above_geoid", 
+                "time", 
+                "latitude"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "FVCOM"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita USF FVCOM 3D no wave", 
+            "temporal": "2005-09-18T00:00:00/2005-09-18T00:28:07.500000/PT28M7.5S,2005-09-18T01:01:52.500000/2005-09-18T01:58:07.500000/PT28M7.5S,2005-09-18T02:31:52.500000/2005-09-18T03:28:07.500000/PT28M7.5S,2005-09-18T04:01:52.500000/2005-09-18T04:58:07.500000/PT28M7.5S,2005-09-18T05:31:52.500000/2005-09-18T06:28:07.500000/PT28M7.5S,2005-09-18T07:01:52.500000/2005-09-18T07:58:07.500000/PT28M7.5S,2005-09-18T08:31:52.500000/2005-09-18T09:28:07.500000/PT28M7.5S,2005-09-18T10:01:52.500000/2005-09-18T10:58:07.500000/PT28M7.5S,2005-09-18T11:31:52.500000/2005-09-18T12:28:07.500000/PT28M7.5S,2005-09-18T13:01:52.500000/2005-09-18T13:58:07.500000/PT28M7.5S,2005-09-18T14:31:52.500000/2005-09-18T15:28:07.500000/PT28M7.5S,2005-09-18T16:01:52.500000/2005-09-18T16:58:07.500000/PT28M7.5S,2005-09-18T17:31:52.500000/2005-09-18T18:28:07.500000/PT28M7.5S,2005-09-18T19:01:52.500000/2005-09-18T19:58:07.500000/PT28M7.5S,2005-09-18T20:31:52.500000/2005-09-18T21:28:07.500000/PT28M7.5S,2005-09-18T22:01:52.500000/2005-09-18T22:58:07.500000/PT28M7.5S,2005-09-18T23:31:52.500000/2005-09-19T00:28:07.500000/PT28M7.5S,2005-09-19T01:01:52.500000/2005-09-19T01:58:07.500000/PT28M7.5S,2005-09-19T02:31:52.500000/2005-09-19T03:28:07.500000/PT28M7.5S,2005-09-19T04:01:52.500000/2005-09-19T04:58:07.500000/PT28M7.5S,2005-09-19T05:31:52.500000/2005-09-19T06:28:07.500000/PT28M7.5S,2005-09-19T07:01:52.500000/2005-09-19T07:58:07.500000/PT28M7.5S,2005-09-19T08:31:52.500000/2005-09-19T09:28:07.500000/PT28M7.5S,2005-09-19T10:01:52.500000/2005-09-19T10:58:07.500000/PT28M7.5S,2005-09-19T11:31:52.500000/2005-09-19T12:28:07.500000/PT28M7.5S,2005-09-19T13:01:52.500000/2005-09-19T13:58:07.500000/PT28M7.5S,2005-09-19T14:31:52.500000/2005-09-19T15:28:07.500000/PT28M7.5S,2005-09-19T16:01:52.500000/2005-09-19T16:58:07.500000/PT28M7.5S,2005-09-19T17:31:52.500000/2005-09-19T18:28:07.500000/PT28M7.5S,2005-09-19T19:01:52.500000/2005-09-19T19:58:07.500000/PT28M7.5S,2005-09-19T20:31:52.500000/2005-09-19T21:28:07.500000/PT28M7.5S,2005-09-19T22:01:52.500000/2005-09-19T22:58:07.500000/PT28M7.5S,2005-09-19T23:31:52.500000/2005-09-20T00:28:07.500000/PT28M7.5S,2005-09-20T01:01:52.500000/2005-09-20T01:58:07.500000/PT28M7.5S,2005-09-20T02:31:52.500000/2005-09-20T03:28:07.500000/PT28M7.5S,2005-09-20T04:01:52.500000/2005-09-20T04:58:07.500000/PT28M7.5S,2005-09-20T05:31:52.500000/2005-09-20T06:28:07.500000/PT28M7.5S,2005-09-20T07:01:52.500000/2005-09-20T07:58:07.500000/PT28M7.5S,2005-09-20T08:31:52.500000/2005-09-20T09:28:07.500000/PT28M7.5S,2005-09-20T10:01:52.500000/2005-09-20T10:58:07.500000/PT28M7.5S,2005-09-20T11:31:52.500000/2005-09-20T12:28:07.500000/PT28M7.5S,2005-09-20T13:01:52.500000/2005-09-20T13:58:07.500000/PT28M7.5S,2005-09-20T14:31:52.500000/2005-09-20T15:28:07.500000/PT28M7.5S,2005-09-20T16:01:52.500000/2005-09-20T16:58:07.500000/PT28M7.5S,2005-09-20T17:31:52.500000/2005-09-20T18:28:07.500000/PT28M7.5S,2005-09-20T19:01:52.500000/2005-09-20T19:58:07.500000/PT28M7.5S,2005-09-20T20:31:52.500000/2005-09-20T21:28:07.500000/PT28M7.5S,2005-09-20T22:01:52.500000/2005-09-20T22:58:07.500000/PT28M7.5S,2005-09-20T23:31:52.500000/2005-09-21T00:28:07.500000/PT28M7.5S,2005-09-21T01:01:52.500000/2005-09-21T01:58:07.500000/PT28M7.5S,2005-09-21T02:31:52.500000/2005-09-21T03:28:07.500000/PT28M7.5S,2005-09-21T04:01:52.500000/2005-09-21T04:58:07.500000/PT28M7.5S,2005-09-21T05:31:52.500000/2005-09-21T06:28:07.500000/PT28M7.5S,2005-09-21T07:01:52.500000/2005-09-21T07:58:07.500000/PT28M7.5S,2005-09-21T08:31:52.500000/2005-09-21T09:28:07.500000/PT28M7.5S,2005-09-21T10:01:52.500000/2005-09-21T10:58:07.500000/PT28M7.5S,2005-09-21T11:31:52.500000/2005-09-21T12:28:07.500000/PT28M7.5S,2005-09-21T13:01:52.500000/2005-09-21T13:58:07.500000/PT28M7.5S,2005-09-21T14:31:52.500000/2005-09-21T15:28:07.500000/PT28M7.5S,2005-09-21T16:01:52.500000/2005-09-21T16:58:07.500000/PT28M7.5S,2005-09-21T17:31:52.500000/2005-09-21T18:28:07.500000/PT28M7.5S,2005-09-21T19:01:52.500000/2005-09-21T19:58:07.500000/PT28M7.5S,2005-09-21T20:31:52.500000/2005-09-21T21:28:07.500000/PT28M7.5S,2005-09-21T22:01:52.500000/2005-09-21T22:58:07.500000/PT28M7.5S,2005-09-21T23:31:52.500000/2005-09-22T00:28:07.500000/PT28M7.5S,2005-09-22T01:01:52.500000/2005-09-22T01:58:07.500000/PT28M7.5S,2005-09-22T02:31:52.500000/2005-09-22T03:28:07.500000/PT28M7.5S,2005-09-22T04:01:52.500000/2005-09-22T04:58:07.500000/PT28M7.5S,2005-09-22T05:31:52.500000/2005-09-22T06:28:07.500000/PT28M7.5S,2005-09-22T07:01:52.500000/2005-09-22T07:58:07.500000/PT28M7.5S,2005-09-22T08:31:52.500000/2005-09-22T09:28:07.500000/PT28M7.5S,2005-09-22T10:01:52.500000/2005-09-22T10:58:07.500000/PT28M7.5S,2005-09-22T11:31:52.500000/2005-09-22T12:28:07.500000/PT28M7.5S,2005-09-22T13:01:52.500000/2005-09-22T13:58:07.500000/PT28M7.5S,2005-09-22T14:31:52.500000/2005-09-22T15:28:07.500000/PT28M7.5S,2005-09-22T16:01:52.500000/2005-09-22T16:58:07.500000/PT28M7.5S,2005-09-22T17:31:52.500000/2005-09-22T18:28:07.500000/PT28M7.5S,2005-09-22T19:01:52.500000/2005-09-22T19:58:07.500000/PT28M7.5S,2005-09-22T20:31:52.500000/2005-09-22T21:28:07.500000/PT28M7.5S,2005-09-22T22:01:52.500000/2005-09-22T22:58:07.500000/PT28M7.5S,2005-09-22T23:31:52.500000/2005-09-23T00:28:07.500000/PT28M7.5S,2005-09-23T01:01:52.500000/2005-09-23T01:58:07.500000/PT28M7.5S,2005-09-23T02:31:52.500000/2005-09-23T03:28:07.500000/PT28M7.5S,2005-09-23T04:01:52.500000/2005-09-23T04:58:07.500000/PT28M7.5S,2005-09-23T05:31:52.500000/2005-09-23T06:28:07.500000/PT28M7.5S,2005-09-23T07:01:52.500000/2005-09-23T07:58:07.500000/PT28M7.5S,2005-09-23T08:31:52.500000/2005-09-23T09:28:07.500000/PT28M7.5S,2005-09-23T10:01:52.500000/2005-09-23T10:58:07.500000/PT28M7.5S,2005-09-23T11:31:52.500000/2005-09-23T12:28:07.500000/PT28M7.5S,2005-09-23T13:01:52.500000/2005-09-23T13:58:07.500000/PT28M7.5S,2005-09-23T14:31:52.500000/2005-09-23T15:28:07.500000/PT28M7.5S,2005-09-23T16:01:52.500000/2005-09-23T16:58:07.500000/PT28M7.5S,2005-09-23T17:31:52.500000/2005-09-23T18:28:07.500000/PT28M7.5S,2005-09-23T19:01:52.500000/2005-09-23T19:58:07.500000/PT28M7.5S,2005-09-23T20:31:52.500000/2005-09-23T21:28:07.500000/PT28M7.5S,2005-09-23T22:01:52.500000/2005-09-23T22:58:07.500000/PT28M7.5S,2005-09-23T23:31:52.500000/2005-09-24T00:28:07.500000/PT28M7.5S,2005-09-24T01:01:52.500000/2005-09-24T01:58:07.500000/PT28M7.5S,2005-09-24T02:31:52.500000/2005-09-24T03:28:07.500000/PT28M7.5S,2005-09-24T04:01:52.500000/2005-09-24T04:58:07.500000/PT28M7.5S,2005-09-24T05:31:52.500000/2005-09-24T06:28:07.500000/PT28M7.5S,2005-09-24T07:01:52.500000/2005-09-24T07:58:07.500000/PT28M7.5S,2005-09-24T08:31:52.500000/2005-09-24T09:28:07.500000/PT28M7.5S,2005-09-24T10:01:52.500000/2005-09-24T10:58:07.500000/PT28M7.5S,2005-09-24T11:31:52.500000/2005-09-24T12:28:07.500000/PT28M7.5S,2005-09-24T13:01:52.500000/2005-09-24T13:58:07.500000/PT28M7.5S,2005-09-24T14:31:52.500000/2005-09-24T15:28:07.500000/PT28M7.5S,2005-09-24T16:01:52.500000/2005-09-24T16:58:07.500000/PT28M7.5S,2005-09-24T17:31:52.500000/2005-09-24T18:28:07.500000/PT28M7.5S,2005-09-24T19:01:52.500000/2005-09-24T19:58:07.500000/PT28M7.5S,2005-09-24T20:31:52.500000/2005-09-24T21:28:07.500000/PT28M7.5S,2005-09-24T22:01:52.500000/2005-09-24T22:58:07.500000/PT28M7.5S,2005-09-24T23:31:52.500000/2005-09-25T00:28:07.500000/PT28M7.5S,2005-09-25T01:01:52.500000/2005-09-25T01:58:07.500000/PT28M7.5S,2005-09-25T02:31:52.500000/2005-09-25T03:28:07.500000/PT28M7.5S,2005-09-25T04:01:52.500000/2005-09-25T04:58:07.500000/PT28M7.5S,2005-09-25T05:31:52.500000/2005-09-25T06:28:07.500000/PT28M7.5S,2005-09-25T07:01:52.500000/2005-09-25T07:58:07.500000/PT28M7.5S,2005-09-25T08:31:52.500000/2005-09-25T09:28:07.500000/PT28M7.5S,2005-09-25T10:01:52.500000/2005-09-25T10:58:07.500000/PT28M7.5S,2005-09-25T11:31:52.500000/2005-09-25T12:28:07.500000/PT28M7.5S,2005-09-25T13:01:52.500000/2005-09-25T13:58:07.500000/PT28M7.5S,2005-09-25T14:31:52.500000/2005-09-25T15:28:07.500000/PT28M7.5S,2005-09-25T16:01:52.500000/2005-09-25T16:58:07.500000/PT28M7.5S,2005-09-25T17:31:52.500000/2005-09-25T18:28:07.500000/PT28M7.5S,2005-09-25T19:01:52.500000/2005-09-25T19:58:07.500000/PT28M7.5S,2005-09-25T20:31:52.500000/2005-09-25T21:28:07.500000/PT28M7.5S,2005-09-25T22:01:52.500000/2005-09-25T22:58:07.500000/PT28M7.5S,2005-09-25T23:31:52.500000/2005-09-26T00:28:07.500000/PT28M7.5S,2005-09-26T01:01:52.500000/2005-09-26T01:58:07.500000/PT28M7.5S,2005-09-26T02:31:52.500000/2005-09-26T03:28:07.500000/PT28M7.5S,2005-09-26T04:01:52.500000/2005-09-26T04:58:07.500000/PT28M7.5S,2005-09-26T05:31:52.500000/2005-09-26T06:28:07.500000/PT28M7.5S,2005-09-26T07:01:52.500000/2005-09-26T07:58:07.500000/PT28M7.5S,2005-09-26T08:31:52.500000/2005-09-26T09:28:07.500000/PT28M7.5S,2005-09-26T10:01:52.500000/2005-09-26T10:58:07.500000/PT28M7.5S,2005-09-26T11:31:52.500000/2005-09-26T12:28:07.500000/PT28M7.5S,2005-09-26T13:01:52.500000/2005-09-26T13:58:07.500000/PT28M7.5S,2005-09-26T14:31:52.500000/2005-09-26T15:28:07.500000/PT28M7.5S,2005-09-26T16:01:52.500000/2005-09-26T16:58:07.500000/PT28M7.5S,2005-09-26T17:31:52.500000/2005-09-26T18:28:07.500000/PT28M7.5S,2005-09-26T19:01:52.500000/2005-09-26T19:58:07.500000/PT28M7.5S,2005-09-26T20:31:52.500000/2005-09-26T21:28:07.500000/PT28M7.5S,2005-09-26T22:01:52.500000/2005-09-26T22:58:07.500000/PT28M7.5S,2005-09-26T23:31:52.500000/2005-09-27T00:28:07.500000/PT28M7.5S,2005-09-27T01:01:52.500000/2005-09-27T01:58:07.500000/PT28M7.5S,2005-09-27T02:31:52.500000/2005-09-27T03:28:07.500000/PT28M7.5S,2005-09-27T04:01:52.500000/2005-09-27T04:58:07.500000/PT28M7.5S,2005-09-27T05:31:52.500000/2005-09-27T06:28:07.500000/PT28M7.5S,2005-09-27T07:01:52.500000/2005-09-27T07:58:07.500000/PT28M7.5S,2005-09-27T08:31:52.500000/2005-09-27T09:28:07.500000/PT28M7.5S,2005-09-27T10:01:52.500000/2005-09-27T10:58:07.500000/PT28M7.5S,2005-09-27T11:31:52.500000/2005-09-27T12:28:07.500000/PT28M7.5S,2005-09-27T13:01:52.500000/2005-09-27T13:58:07.500000/PT28M7.5S,2005-09-27T14:31:52.500000/2005-09-27T15:28:07.500000/PT28M7.5S,2005-09-27T16:01:52.500000/2005-09-27T16:58:07.500000/PT28M7.5S,2005-09-27T17:31:52.500000/2005-09-27T18:28:07.500000/PT28M7.5S,2005-09-27T19:01:52.500000/2005-09-27T19:58:07.500000/PT28M7.5S,2005-09-27T20:31:52.500000/2005-09-27T21:28:07.500000/PT28M7.5S,2005-09-27T22:01:52.500000/2005-09-27T22:58:07.500000/PT28M7.5S,2005-09-27T23:31:52.500000/2005-09-28T00:28:07.500000/PT28M7.5S,2005-09-28T01:01:52.500000/2005-09-28T01:58:07.500000/PT28M7.5S,2005-09-28T02:31:52.500000/2005-09-28T03:28:07.500000/PT28M7.5S,2005-09-28T04:01:52.500000/2005-09-28T04:58:07.500000/PT28M7.5S,2005-09-28T05:31:52.500000/2005-09-28T06:28:07.500000/PT28M7.5S,2005-09-28T07:01:52.500000/2005-09-28T07:58:07.500000/PT28M7.5S,2005-09-28T08:31:52.500000/2005-09-28T09:28:07.500000/PT28M7.5S,2005-09-28T10:01:52.500000/2005-09-28T10:58:07.500000/PT28M7.5S,2005-09-28T11:31:52.500000/2005-09-28T12:28:07.500000/PT28M7.5S,2005-09-28T13:01:52.500000/2005-09-28T13:58:07.500000/PT28M7.5S,2005-09-28T14:31:52.500000/2005-09-28T15:28:07.500000/PT28M7.5S,2005-09-28T16:01:52.500000/2005-09-28T16:58:07.500000/PT28M7.5S,2005-09-28T17:31:52.500000/2005-09-28T18:28:07.500000/PT28M7.5S,2005-09-28T19:01:52.500000/2005-09-28T19:58:07.500000/PT28M7.5S,2005-09-28T20:31:52.500000/2005-09-28T21:28:07.500000/PT28M7.5S,2005-09-28T22:01:52.500000/2005-09-28T22:58:07.500000/PT28M7.5S,2005-09-28T23:31:52.500000/2005-09-29T00:28:07.500000/PT28M7.5S,2005-09-29T01:01:52.500000/2005-09-29T01:58:07.500000/PT28M7.5S,2005-09-29T02:31:52.500000/2005-09-29T03:28:07.500000/PT28M7.5S,2005-09-29T04:01:52.500000/2005-09-29T04:58:07.500000/PT28M7.5S,2005-09-29T05:31:52.500000/2005-09-29T06:28:07.500000/PT28M7.5S,2005-09-29T07:01:52.500000/2005-09-29T07:58:07.500000/PT28M7.5S,2005-09-29T08:31:52.500000/2005-09-29T09:28:07.500000/PT28M7.5S,2005-09-29T10:01:52.500000/2005-09-29T10:58:07.500000/PT28M7.5S,2005-09-29T11:31:52.500000/2005-09-29T12:28:07.500000/PT28M7.5S,2005-09-29T13:01:52.500000/2005-09-29T13:58:07.500000/PT28M7.5S,2005-09-29T14:31:52.500000/2005-09-29T15:28:07.500000/PT28M7.5S,2005-09-29T16:01:52.500000/2005-09-29T16:58:07.500000/PT28M7.5S,2005-09-29T17:31:52.500000/2005-09-29T18:28:07.500000/PT28M7.5S,2005-09-29T19:01:52.500000/2005-09-29T19:58:07.500000/PT28M7.5S,2005-09-29T20:31:52.500000/2005-09-29T21:28:07.500000/PT28M7.5S,2005-09-29T22:01:52.500000/2005-09-29T22:58:07.500000/PT28M7.5S,2005-09-29T23:31:52.500000/2005-09-30T00:28:07.500000/PT28M7.5S,2005-09-30T01:01:52.500000/2005-09-30T01:58:07.500000/PT28M7.5S,2005-09-30T02:31:52.500000/2005-09-30T03:28:07.500000/PT28M7.5S,2005-09-30T04:01:52.500000/2005-09-30T04:58:07.500000/PT28M7.5S,2005-09-30T05:31:52.500000/2005-09-30T06:28:07.500000/PT28M7.5S,2005-09-30T07:01:52.500000/2005-09-30T07:58:07.500000/PT28M7.5S,2005-09-30T08:31:52.500000/2005-09-30T09:28:07.500000/PT28M7.5S,2005-09-30T10:01:52.500000/2005-09-30T10:58:07.500000/PT28M7.5S,2005-09-30T11:31:52.500000/2005-09-30T12:28:07.500000/PT28M7.5S,2005-09-30T13:01:52.500000/2005-09-30T13:58:07.500000/PT28M7.5S,2005-09-30T14:31:52.500000/2005-09-30T15:28:07.500000/PT28M7.5S,2005-09-30T16:01:52.500000/2005-09-30T16:58:07.500000/PT28M7.5S,2005-09-30T17:31:52.500000/2005-09-30T18:28:07.500000/PT28M7.5S,2005-09-30T19:01:52.500000/2005-09-30T19:58:07.500000/PT28M7.5S,2005-09-30T20:31:52.500000/2005-09-30T21:28:07.500000/PT28M7.5S,2005-09-30T22:01:52.500000/2005-09-30T22:58:07.500000/PT28M7.5S,2005-09-30T23:31:52.500000/2005-10-01T00:00:00/PT28M7.5S", 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_usf_fvcom_3dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_usf_fvcom_3dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_usf_fvcom_3dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_usf_fvcom_3dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/f39ec719-0ecf-4ae3-a601-6c36c6ee95dc", 
+            "variablesMeasured": [
+                "ocean_sigma/general_coordinate", 
+                "longitude", 
+                "sea_floor_depth_below_geoid", 
+                "sea_surface_height_above_geoid", 
+                "time", 
+                "latitude"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "FVCOM"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita USF FVCOM 3D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_usf_fvcom_3dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_usf_fvcom_3dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_usf_fvcom_3dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_usf_fvcom_3dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/0dc04f73-b861-40af-8478-bfaddd678ef0", 
+            "variablesMeasured": [
+                "ocean_sigma/general_coordinate", 
+                "longitude", 
+                "sea_floor_depth_below_geoid", 
+                "sea_surface_height_above_geoid", 
+                "time", 
+                "latitude"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "FVCOM"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita VIMS SELFE 2D no wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_2dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_2dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_vims_selfe_2dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_vims_selfe_2dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/774169cb-04e3-4293-bd78-53e09045ce5f", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita VIMS SELFE 2D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_2dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_2dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_vims_selfe_2dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_vims_selfe_2dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/aa4ac4d7-db41-4b6d-abc5-06e3ab592e2c", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita VIMS SELFE 2D wave only", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_2dwaveonly.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_2dwaveonly.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_vims_selfe_2dwaveonly.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_vims_selfe_2dwaveonly?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/c07d5255-7ed2-4515-aac5-35b2ebbafcef", 
+            "variablesMeasured": [
+                "latitude", 
+                "longitude", 
+                "time"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita VIMS SELFE 3D no wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_3dnowave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_3dnowave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_vims_selfe_3dnowave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_vims_selfe_3dnowave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/aef2d6f9-d901-4be4-bde2-d2c69eac37ec", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "SELFE"
+            }
+        }, 
+        {
+            "references": [], 
+            "description": null, 
+            "spatial": null, 
+            "title": "Rita VIMS SELFE 3D wave", 
+            "temporal": null, 
+            "landingPage": "SHOULD_BE_PAGE_THIS_IS_USING", 
+            "distributions": [
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/dodsC/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_3dwave.ncml.html", 
+                    "mediaType": "text/html", 
+                    "title": "OPeNDAP Dataset Access Form", 
+                    "description": "OPeNDAP Dataset Access Form", 
+                    "format": "HTML"
+                }, 
+                {
+                    "downloadURL": "http://thredds.comt.ioos.us/thredds/iso/noaa/ioos/comt/tropical_inundation.rita_vims_selfe_3dwave.ncml?catalog=http://thredds.comt.ioos.us/thredds/catalog/noaa/ioos/comt/catalog.html&dataset=noaa.ioos.comt/tropical_inundation.rita_vims_selfe_3dwave.ncml", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "ISO 19115 Metadata", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://sciwms.comt.ioos.us/wms/datasets/tropical_inundationrita_vims_selfe_3dwave?REQUEST=GetCapabilities", 
+                    "mediaType": "application/xml", 
+                    "title": "ISO 19115 Metadata", 
+                    "description": "OGC WMS 1.1.1", 
+                    "format": "XML"
+                }, 
+                {
+                    "downloadURL": "http://dev.oceansmap.com/comtdev", 
+                    "mediaType": "application/html", 
+                    "title": "OceansMap Viewer", 
+                    "description": "OceansMap Viewer", 
+                    "format": "HTML"
+                }
+            ], 
+            "thumbnail": "http://thredds.comt.ioos.us/api/dataset/thumb/f07749b3-02bc-46a2-8346-656b0b8395a0", 
+            "variablesMeasured": [
+                "time"
+            ], 
+            "comt": {
+                "project": "tropical_inundation", 
+                "sub-project": "rita", 
+                "model": "SELFE"
             }
         }, 
         {
