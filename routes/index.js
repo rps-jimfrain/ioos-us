@@ -1,7 +1,34 @@
 var express = require('express');
 var router = express.Router();
 var pgp = require('pg-promise')();
-var db = pgp('postgres://postgres:postgres@localhost:5432/comt');
+
+let pgUser = 'postgres';
+let pgPass = 'postgres';
+let pgHost = 'localhost';
+let pgPort = 5432
+let pgDatabase = 'comt';
+
+if (process.env.POSTGRES_HOST) {
+  pgHost = process.env.POSTGRES_HOST;
+}
+
+if (process.env.POSTGRES_PORT) {
+  pgPort = process.env.POSTGRES_PORT;
+}
+
+if (process.env.POSTGRES_USER) {
+  pgUser = process.env.POSTGRES_USER;
+}
+
+if (process.env.POSTGRES_PASSWORD) {
+  pgPass = process.env.POSTGRES_PASSWORD;
+}
+
+if (process.env.POSTGRES_DB) {
+  pgDatabase = process.env.POSTGRES_DB;
+}
+
+var db = pgp(`postgres://${pgUser}:${pgPass}@${pgHost}:${pgPort}/${pgDatabase}`);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
