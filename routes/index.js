@@ -67,7 +67,7 @@ router.get('/comt/projects/:project', function(req, res, next) {
     return t.batch([
       t.many('SELECT title FROM projects ORDER BY id ASC', [true]),
       t.one('SELECT id, title, team as "Project Team", overview as "Project Overview and Results", ' +
-              'model_desc as "Model Descriptions", sub_project_desc as "Sub-Project Descriptions", ' +
+              'model_desc as "Model Descriptions", sub_project_desc as "Sub-Project Descriptions/Data", ' +
               'pubs as "Publications", title_key FROM projects WHERE regexp_replace(LOWER(title), \'[\.\/\\s+]\', \'\', \'g\') = \'' + projectTitle + '\'', [true])
     ]);
   })
