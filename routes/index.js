@@ -68,7 +68,7 @@ router.get('/comt/projects/:project', function(req, res, next) {
       t.many('SELECT title FROM projects ORDER BY id ASC', [true]),
       t.one('SELECT id, title, team as "Project Team", overview as "Project Overview and Results", ' +
               'model_desc as "Model Descriptions", sub_project_desc as "Sub-Project Descriptions/Data", ' +
-              'pubs as "Publications", title_key FROM projects WHERE regexp_replace(LOWER(title), \'[\.\/\\s+]\', \'\', \'g\') = \'' + projectTitle + '\'', [true])
+              'pubs as "Publications", title_key FROM projects WHERE regexp_replace(LOWER(title), \'[\.\/\\s+\^&]\', \'\', \'g\') = \'' + projectTitle + '\'', [true])
     ]);
   })
   .then(function (data) {
@@ -118,7 +118,7 @@ router.get('/comt/projects/:project/:dataset', function(req, res, next) {
     }
     dataset.variablesColored = true;
   }
-  db.one('SELECT title FROM projects WHERE regexp_replace(LOWER(title), \'[\.\/\\s+]\', \'\', \'g\') = \'' + projectTitle + '\'', [true])
+  db.one('SELECT title FROM projects WHERE regexp_replace(LOWER(title), \'[\.\/\\s+\^&]\', \'\', \'g\') = \'' + projectTitle + '\'', [true])
     .then(function (project) {
       res.render('comt/dataset', {
         title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects | ' + project.title + ' | Datasets',

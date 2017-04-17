@@ -8,7 +8,7 @@ block body
   - var page = path
 
   each project in data[0]
-    if project.title.replace(/[ \/\.]*/g, '').toLowerCase() === projectTitle
+    if project.title.replace(/[ \/\.\^&]*/g, '').toLowerCase() === projectTitle
       - nav += '<li class="active"><a href="#' + data[1].id + '">' + data[1].title + '</a>'
       - nav += '<ul class="nav">'
       each val, index in data[1]
@@ -18,7 +18,7 @@ block body
           - content += '<h1 class="page-header">' + val + '</h1>'
         else 
           if val != undefined && index !== 'title_key'
-            - var id = index.replace(/[ ]/g, '-').toLowerCase()
+            - var id = index.replace(/[ \/]/g, '-').toLowerCase()
             - nav += '<li><a href="#' + id + '">' + index + '</a></li>'
             - content += '<div class="anchor" id="' + id + '"></div><h2>' + index + '</h2>'
             - content += val
