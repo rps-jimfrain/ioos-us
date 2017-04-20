@@ -29,7 +29,7 @@ header > .container-fluid {
   margin-bottom: 0;
 }
 
-.navbar img[src="images/logo-navbar.png"]  {
+.navbar img[src="/images/logo-navbar.png"]  {
   max-height: 42px;
   margin-top: -11px;
 }
@@ -321,7 +321,7 @@ button#search-data-button.btn.btn-default.open span::before
     display: inline-block;
   }
 
-  .navbar img[src="images/logo-navbar.png"] {
+  .navbar img[src="/images/logo-navbar.png"] {
     margin-top: -6px;
   }
 
@@ -729,3 +729,148 @@ footer > .container > .row > .col-md-3 a:hover {
 #main-container.container > .row > .col-md-3.col-centered {
   width: 20%;
 }
+
+/*  BEGIN side-nav  */
+
+nav.nav-list {
+  top: 215px;
+}
+
+.sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #767676
+}
+
+.sidebar .nav > li > a:focus,
+.sidebar .nav > li > a:hover {
+    padding-left: 19px;
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #563d7c
+}
+
+.sidebar .nav > .active > ul {
+    display: block;
+}
+
+.sidebar .nav > .active:focus > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active > a {
+    padding-left: 18px;
+    font-weight: 700;
+    color: #563d7c;
+    background-color: transparent;
+    border-left: 2px solid #563d7c
+}
+
+.sidebar .nav .nav {
+    display: none;
+    padding-bottom: 10px
+}
+
+.sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.sidebar .nav .nav > li > a:focus,
+.sidebar .nav .nav > li > a:hover {
+    padding-left: 29px
+}
+
+.sidebar .nav .nav > .active:focus > a,
+.sidebar .nav .nav > .active:hover > a,
+.sidebar .nav .nav > .active > a {
+    padding-left: 28px;
+    font-weight: 500
+}
+
+@media (min-width: 992px) {
+  #sidenav.affix {
+    width: 212.5px;
+  }
+}
+
+/*  END side-nav  */
+
+
+/*  BEGIN comt */
+
+#main-container.comt > .row h1 {
+  text-align: center;
+}
+
+#main-container.comt .row:last-of-type h2 {
+  text-align   : center;
+  margin-bottom: 20px;
+}
+
+.project-snippet-fade {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 109px;
+    margin-bottom: 89px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+/*  END comt  */
+
+/*  BEGIN comt/projects */
+
+#main-container.comt-projects {
+  margin-top: 25px;
+}
+
+div.anchor {
+  display   : block;
+  position  : relative;
+  top       : -90px;
+  visibility: hidden;
+}
+
+/* END comt/projects */
+
+/*  BEGIN comt/projects/:project */
+
+.comt-projects div.list-group {
+  display     : inline-block;
+  margin-left : 30px;
+}
+
+/*  END comt/projects/:project */
+
+/*  BEGIN comt/projects/:project/:dataset */
+
+.comt-dataset img.thumbnail {
+  box-shadow: 5px 5px 5px #666;
+  -moz-box-shadow: 5px 5px 5px #666;
+  -webkit-box-shadow: 5px 5px 5px #666;
+  min-width: 225px;
+  min-height: 225px;
+}
+
+.comt-dataset dd > ul {
+  list-style  : none;
+  padding-left: 0;
+}
+
+.comt-dataset span.badge {
+  font-size: 14px;
+}
+
+/* END comt/projects/:project/:dataset */

@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER Luke Campbell <luke.campbell@rpsgroup.com>
 
-ENV NODE_VERSION 4.6.1
+ENV NODE_VERSION 6.10.2
 ENV GOSU_VERSION 1.9
 ENV SCRIPTS_DIR /opt/build_scripts
 
