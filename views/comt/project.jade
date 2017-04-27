@@ -8,7 +8,7 @@ block body
   - var page = path
 
   each project in data[0]
-    if project.title.replace(/[ \/\.\^&]*/g, '').toLowerCase() === projectTitle
+    if project.title_key === title_key
       - nav += '<li class="active"><a href="#' + data[1].id + '">' + data[1].title + '</a>'
       - nav += '<ul class="nav">'
       each val, index in data[1]
@@ -26,7 +26,7 @@ block body
             - nav += '</ul>'
         - subCount++
     else
-      - nav += '<li><a href="/comt/projects/' + project.title.replace(/[^\w]/g, '-').toLowerCase() + '">' + project.title + '</a></li>'
+      - nav += '<li><a href="/comt/projects/' + project.title_key + '">' + project.title + '</a></li>'
     - nav += '</li>'
     - subCount = 0
   - nav += '</ul></nav></div>'
