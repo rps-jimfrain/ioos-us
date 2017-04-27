@@ -5,6 +5,7 @@ var pgp = require('pg-promise')();
 var pq = require('pg-promise').ParameterizedQuery;
 
 const connectionstring = `postgres://${process.env.POSTGRES_USER}:${process.env.POSTGRES_PASSWORD}@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/${process.env.POSTGRES_DB}`;
+const db = pgp(connectionstring);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -23,7 +24,6 @@ router.get('/contact-us', function(req, res, next) {
 
 /* GET comt about page. */
 router.get('/comt', function(req, res, next) {
-	var db = pgp(connectionstring);
   var findProjects = new pq('SELECT title, SUBSTRING (overview, 0, 280) as overview, title_key FROM projects ORDER BY id ASC');
   db.many(findProjects)
   .then(function (data) {
@@ -38,7 +38,6 @@ router.get('/comt', function(req, res, next) {
 
 /* GET comt projects page. */
 router.get('/comt/projects/:title_key', function(req, res, next) {
-	var db = pgp(connectionstring);
   var allDatasets = require('../public/comt_datasets');
   var projectDatasets = [];
   var findProjectTitles = new pq('SELECT title, title_key FROM projects ORDER BY id ASC');
@@ -71,7 +70,6 @@ router.get('/comt/projects/:title_key', function(req, res, next) {
 
 /* GET comt dataset page. */
 router.get('/comt/projects/:title_key/:dataset', function(req, res, next) {
-	var db = pgp(connectionstring);
   var datasetTitle = req.params.dataset,
       datasets = require('../public/comt_datasets'),
       variables = {},
