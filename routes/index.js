@@ -37,7 +37,6 @@ router.get('/comt', function(req, res, next) {
 /* GET comt projects page. */
 router.get('/comt/projects/:title_key', function(req, res, next) {
 	var db = pgp(connectionstring);
-  var title_key = req.params.title_key;
   var allDatasets = require('../public/comt_datasets');
   var projectDatasets = [];
   db.task(function(t){
@@ -45,18 +44,18 @@ router.get('/comt/projects/:title_key', function(req, res, next) {
       t.many('SELECT title, title_key FROM projects ORDER BY id ASC', [true]),
       t.one('SELECT id, title, team as "Project Team", overview as "Project Overview and Results", ' +
               'model_desc as "Model Descriptions", sub_project_desc as "Sub-Project Descriptions/Data", ' +
-              'pubs as "Publications", title_key FROM projects WHERE title_key = \'' + title_key + '\'', [true])
+              'pubs as "Publications", title_key FROM projects WHERE title_key = \'' + req.params.title_key + '\'', [true])
     ]);
   })
   .then(function (data) {
     allDatasets.dataset.forEach(function (dataset) {
-      if (dataset.comt.project === title_key)
+      if (dataset.comt.project === req.params.title_key)
         projectDatasets.push(dataset);
     });
     res.render('comt/project', {
       title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects | ' + data[1].title,
       data: data,
-      title_key: title_key,
+      title_key: req.params.title_key,
       datasets: projectDatasets,
       path: req.path
     });
@@ -72,8 +71,7 @@ router.get('/comt/projects/:title_key/:dataset', function(req, res, next) {
   var datasetTitle = req.params.dataset,
       datasets = require('../public/comt_datasets'),
       variables = {},
-      dataset = {},
-      title_key = req.params.title_key;
+      dataset = {};
   datasets.dataset.every(function (e, i) {
     if (e.title.replace(/[^\w]/g, '-').toLowerCase() === datasetTitle) {
       dataset = e;
@@ -96,13 +94,13 @@ router.get('/comt/projects/:title_key/:dataset', function(req, res, next) {
     }
     dataset.variablesColored = true;
   }
-  db.one('SELECT title FROM projects WHERE title_key = \'' + title_key + '\'', [true])
+  db.one('SELECT title FROM projects WHERE title_key = \'' + req.params.title_key + '\'', [true])
     .then(function (project) {
       res.render('comt/dataset', {
         title: 'The U.S. Integrated Ocean Observing System (IOOS) | Coastal and Ocean Modeling Testbed Projects | ' + project.title + ' | Datasets',
         dataset: dataset,
         project: project,
-        projectPath: req.params.project,
+        title_key: req.params.title_key,
         subProjectTitle: req.query.t
       });
     })
