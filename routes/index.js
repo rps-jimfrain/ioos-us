@@ -1,10 +1,9 @@
 "use strict"
-var express = require('express');
-var router = express.Router();
-var pgp = require('pg-promise')();
-var pq = require('pg-promise').ParameterizedQuery;
+const express = require('express');
+const router = express.Router();
+const db = require('../lib/pg.js').db;
+const pq = require('pg-promise').ParameterizedQuery;
 
-const connectionstring = `postgres://${process.env.POSTGRES_USER}:${process.env.POSTGRES_PASSWORD}@${process.env.POSTGRES_HOST}:${process.env.POSTGRES_PORT}/${process.env.POSTGRES_DB}`;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -24,7 +23,6 @@ router.get('/contact-us', function(req, res, next) {
 /* GET comt about page. */
 router.get('/comt', function(req, res, next) {
   var findProjects = new pq('SELECT title, SUBSTRING (overview, 0, 280) as overview, title_key FROM projects ORDER BY id ASC');
-  const db = pgp(connectionstring);
   db.many(findProjects)
   .then(function (data) {
     res.render('comt/index', {
@@ -44,7 +42,6 @@ router.get('/comt/projects/:title_key', function(req, res, next) {
   var findProject = new pq('SELECT id, title, team as "Project Team", overview as "Project Overview and Results", ' +
               'model_desc as "Model Descriptions", sub_project_desc as "Sub-Project Descriptions/Data", ' +
               'pubs as "Publications", title_key FROM projects WHERE title_key = $1', req.params.title_key);
-  const db = pgp(connectionstring);
   db.task(function(t){
     return t.batch([
       t.many(findProjectTitles),
@@ -98,7 +95,6 @@ router.get('/comt/projects/:title_key/:dataset', function(req, res, next) {
     dataset.variablesColored = true;
   }
   var findProjectTitle = new pq('SELECT title FROM projects WHERE title_key = $1', req.params.title_key);
-  const db = pgp(connectionstring);
   db.one(findProjectTitle)
     .then(function (project) {
       res.render('comt/dataset', {

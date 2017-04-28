@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER Luke Campbell <luke.campbell@rpsgroup.com>
 
-ENV NODE_VERSION 6.10.2
+ENV NODE_VERSION 7.9.0
 ENV GOSU_VERSION 1.9
 ENV SCRIPTS_DIR /opt/build_scripts
 
@@ -16,6 +16,7 @@ COPY bin /opt/ioos-us/bin
 COPY public /opt/ioos-us/public
 COPY routes /opt/ioos-us/routes
 COPY views /opt/ioos-us/views
+COPY lib /opt/ioos-us/lib
 COPY .bowerrc app.js assets.json bower.json gruntfile.js package.json /opt/ioos-us/
 
 WORKDIR /opt/ioos-us
