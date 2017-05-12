@@ -564,6 +564,7 @@ footer {
   padding-bottom      : 60px;
   height              : 450px;
   margin-top          : 50px;
+  position            : relative;
 }
 
 footer > .container > .row > .col-md-3 a {
