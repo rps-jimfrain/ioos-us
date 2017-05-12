@@ -851,6 +851,15 @@ div.anchor {
   margin-left : 30px;
 }
 
+.comt-projects h1,
+.comt-projects h2 {
+  color: #003087;
+}
+
+.comt-projects h4 {
+  font-style: italic;
+}
+
 /*  END comt/projects/:project */
 
 /*  BEGIN comt/projects/:project/:dataset */
