@@ -1,6 +1,6 @@
 {
   "name": "ioos-us",
-  "version": "0.0.3p1",
+  "version": "0.0.3p2",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
