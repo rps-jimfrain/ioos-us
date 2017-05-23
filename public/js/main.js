@@ -50,5 +50,14 @@ $(function() {
     }
   });
   $('#search-input-collapse button').on('click', searchCatalog);
+  $('#feedback').on('click',function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $('#feedbackForm textarea, #feedbackForm input:not([type="submit"])').val('');
+    $('#feedbackForm').modal({show:true});
+  });
+  $('#feedbackForm').on('shown.bs.modal', function() {
+    $('#feedbackForm textarea').focus();
+  });
   headerScroll();
 });
